@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Twitter } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 const About = () => {
   return (
@@ -22,6 +22,7 @@ const About = () => {
               title="CEO & Founder"
               image="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
               description="Hockey passion + entrepreneurial drive. Founded 360° Hockey Enterprises, developing hockey training solutions."
+              linkedinUrl="https://ca.linkedin.com/"
             />
             
             <TeamMember
@@ -29,6 +30,7 @@ const About = () => {
               title="CBDO & Co-Founder"
               image="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg"
               description="Combines a deep hockey passion with entrepreneurial drive. Sponsorship and partnership specialist skilled at bridging fans, brands, and leagues."
+              linkedinUrl="https://ca.linkedin.com/"
             />
             
             <TeamMember
@@ -36,6 +38,7 @@ const About = () => {
               title="CTO & Co-Founder"
               image="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
               description="Computer engineer and real-time systems architect. Leads the Hyperion sub-second scoring engine and AI/ML integrations. Ensures platform scalability and data security."
+              linkedinUrl="https://ca.linkedin.com/"
             />
             
             <TeamMember
@@ -43,6 +46,7 @@ const About = () => {
               title="CFO"
               image="https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg"
               description="Former COO at BMO Trust, responsible for managing CAD $65B in assets. Provides large-scale financial expertise, investor relations, and strategic growth focus. Ensures a sustainable runway with rigorous financial oversight."
+              linkedinUrl="https://ca.linkedin.com/"
             />
           </div>
         </div>
@@ -56,9 +60,10 @@ interface TeamMemberProps {
   title: string;
   image: string;
   description: string;
+  linkedinUrl: string;
 }
 
-const TeamMember: React.FC<TeamMemberProps> = ({ name, title, image, description }) => {
+const TeamMember: React.FC<TeamMemberProps> = ({ name, title, image, description, linkedinUrl }) => {
   return (
     <div className="group">
       <div className="flex flex-col items-center text-center md:items-start md:text-left md:flex-row md:gap-8">
@@ -66,12 +71,14 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, title, image, description
           <div className="w-48 h-48 rounded-full overflow-hidden shadow-xl">
             <img src={image} alt={name} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300" />
           </div>
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 flex gap-3">
-            <a href="#" className="bg-white p-2 rounded-full shadow-lg hover:bg-secondary hover:text-white transition-colors duration-300">
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2">
+            <a 
+              href={linkedinUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="h-10 w-10 bg-white rounded-full shadow-lg hover:bg-secondary hover:text-white transition-colors duration-300 flex items-center justify-center"
+            >
               <Linkedin size={20} />
-            </a>
-            <a href="#" className="bg-white p-2 rounded-full shadow-lg hover:bg-secondary hover:text-white transition-colors duration-300">
-              <Twitter size={20} />
             </a>
           </div>
         </div>
