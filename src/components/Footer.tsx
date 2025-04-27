@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const Footer: React.FC = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-4">
@@ -17,19 +22,31 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#products" className="text-white/80 hover:text-secondary transition-colors duration-300">
+                <Link 
+                  to="/products" 
+                  onClick={scrollToTop}
+                  className="text-white/80 hover:text-secondary transition-colors duration-300"
+                >
                   Our Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-white/80 hover:text-secondary transition-colors duration-300">
+                <Link 
+                  to="/about" 
+                  onClick={scrollToTop}
+                  className="text-white/80 hover:text-secondary transition-colors duration-300"
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="text-white/80 hover:text-secondary transition-colors duration-300">
+                <Link 
+                  to="/contact" 
+                  onClick={scrollToTop}
+                  className="text-white/80 hover:text-secondary transition-colors duration-300"
+                >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
