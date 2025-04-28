@@ -20,7 +20,7 @@ const About = () => {
             <TeamMember
               name="Philippe Trop"
               title="CEO & Founder"
-              image="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg"
+              image="/ptrop.png"
               description="Hockey passion + entrepreneurial drive. Founded 360° Hockey Enterprises, developing hockey training solutions."
               linkedinUrl="https://ca.linkedin.com/"
             />
@@ -28,7 +28,7 @@ const About = () => {
             <TeamMember
               name="Blake Nielsen"
               title="CBDO & Co-Founder"
-              image="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg"
+              image="/blake.png"
               description="Combines a deep hockey passion with entrepreneurial drive. Sponsorship and partnership specialist skilled at bridging fans, brands, and leagues."
               linkedinUrl="https://ca.linkedin.com/"
             />
@@ -36,7 +36,7 @@ const About = () => {
             <TeamMember
               name="Salvatore Papia"
               title="CTO & Co-Founder"
-              image="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"
+              image="/sal.png"
               description="Computer engineer and real-time systems architect. Leads the Hyperion sub-second scoring engine and AI/ML integrations. Ensures platform scalability and data security."
               linkedinUrl="https://ca.linkedin.com/"
             />
@@ -44,7 +44,7 @@ const About = () => {
             <TeamMember
               name="Martin Villeneuve"
               title="CFO"
-              image="https://images.pexels.com/photos/2379006/pexels-photo-2379006.jpeg"
+              image="/martin.png"
               description="Former COO at BMO Trust, responsible for managing CAD $65B in assets. Provides large-scale financial expertise, investor relations, and strategic growth focus. Ensures a sustainable runway with rigorous financial oversight."
               linkedinUrl="https://ca.linkedin.com/"
             />
