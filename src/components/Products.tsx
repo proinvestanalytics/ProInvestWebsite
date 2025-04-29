@@ -6,29 +6,28 @@ const Products: React.FC = () => {
     <section id="products" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Our Products</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Our Solutions</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Innovative solutions that connect fans with professional hockey
-            through cutting-edge technology
+            From fan engagement to team analytics, we're revolutionizing the hockey experience
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <ProductCard 
             title="One Game Contest" 
-            description="A fan game that lets users interact with live NHL games. Predict plays, track favorite players, and earn rewards based on real-time performance."
+            description="Engage with live NHL games in real-time. Make predictions, track your favorite players, and earn rewards while watching the game unfold."
             icon={<Trophy className="h-12 w-12 text-secondary" />}
           />
           
           <ProductCard 
             title="ProInsight Suite" 
-            description="A comprehensive tool for NHL teams to customize and manage OGC games. Analyze player metrics, create fan engagement opportunities, and drive team loyalty."
+            description="A powerful platform for NHL teams to create custom fan experiences, analyze engagement metrics, and drive team loyalty."
             icon={<Layers className="h-12 w-12 text-secondary" />}
           />
           
           <ProductCard 
             title="Hyperion Engine" 
-            description="Our powerful computer vision AI model that gives live analysis of player performance. Track movements, analyze plays, and generate insights in real-time."
+            description="Advanced analytics and AI-powered insights for teams, tracking player performance and generating real-time game analysis."
             icon={<Cpu className="h-12 w-12 text-secondary" />}
           />
         </div>
