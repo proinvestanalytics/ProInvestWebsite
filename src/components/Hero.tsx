@@ -13,17 +13,17 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              The Future of Hockey Analytics
+              The Future of Fan Engagement
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-xl leading-relaxed">
-              Connect with your favorite professional players through cutting-edge technology and real-time analytics.
+              Experience hockey like never before. Make predictions, track players, and earn rewards in real-time as you watch the game.
             </p>
             <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <a
                 href="#book-demo"
                 className="btn-primary text-lg"
               >
-                Book a Demo
+                Try One Game Contest
               </a>
               <button
                 onClick={openModal}
@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
               <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm text-primary px-6 py-3 rounded-lg shadow-lg">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="font-semibold">Live Analytics</span>
+                  <span className="font-semibold">Live Predictions</span>
                 </div>
               </div>
             </div>
