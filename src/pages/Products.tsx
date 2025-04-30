@@ -29,7 +29,7 @@ const Products = () => {
                 "Social features and leaderboards"
               ]}
               icon={<Trophy className="w-12 h-12 text-secondary" />}
-              imageUrl="/hockey-faceoff.png"
+              imageUrl="/fan-app.png"
               reverse={false}
             />
 
@@ -44,7 +44,7 @@ const Products = () => {
                 "Integration with existing systems"
               ]}
               icon={<Layers className="w-12 h-12 text-secondary" />}
-              imageUrl="/hockey-faceoff.png"
+              imageUrl="/team-insights.png"
               reverse={true}
             />
 
@@ -59,7 +59,7 @@ const Products = () => {
                 "Scalable processing architecture"
               ]}
               icon={<Cpu className="w-12 h-12 text-secondary" />}
-              imageUrl="/hockey-faceoff.png"
+              imageUrl="/player-analytics.png"
               reverse={false}
             />
           </div>

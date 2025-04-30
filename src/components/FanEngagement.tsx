@@ -35,7 +35,7 @@ const FanEngagement: React.FC = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/hockey-faceoff.png"
+                  src="/app-integration.png"
                   alt="Fan engagement platform"
                   className="w-full h-auto"
                 />
