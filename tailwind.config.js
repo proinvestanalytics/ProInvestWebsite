@@ -14,6 +14,11 @@ export default {
           DEFAULT: '#00B88C',
           dark: '#009E78',
         },
+        tertiary: {
+          light: '#a0afbd',
+          DEFAULT: '#86929e',
+          dark: '#757f8a',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

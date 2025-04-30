@@ -18,12 +18,12 @@ const Products: React.FC = () => {
           <div className="relative w-4/5 h-2 bg-gray-200 rounded-full">
             <div className="absolute top-0 left-0 w-1/3 h-2 bg-secondary rounded-l-full"></div>
             <div className="absolute top-0 left-1/3 w-1/3 h-2 bg-primary"></div>
-            <div className="absolute top-0 right-0 w-1/3 h-2 bg-primary/60 rounded-r-full"></div>
+            <div className="absolute top-0 right-0 w-1/3 h-2 bg-tertiary rounded-r-full"></div>
             
             {/* Fixed positioning of numbers with explicit percentages */}
             <div className="absolute -top-4 left-[16.67%] w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-bold" style={{ transform: 'translateX(-50%)' }}>1</div>
             <div className="absolute -top-4 left-[50%] w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold" style={{ transform: 'translateX(-50%)' }}>2</div>
-            <div className="absolute -top-4 left-[83.33%] w-8 h-8 bg-primary/60 rounded-full flex items-center justify-center text-white font-bold" style={{ transform: 'translateX(-50%)' }}>3</div>
+            <div className="absolute -top-4 left-[83.33%] w-8 h-8 bg-tertiary rounded-full flex items-center justify-center text-white font-bold" style={{ transform: 'translateX(-50%)' }}>3</div>
           </div>
         </div>
         
@@ -38,14 +38,14 @@ const Products: React.FC = () => {
           <ProductCard 
             title="ProInsight Suite" 
             description="Maximize value from your digital platforms. Create custom fan experiences, analyze engagement metrics, integrate sponsor activations, and drive team loyalty."
-            icon={<Layers className="h-12 w-12 text-primary" />}
+            icon={<Layers className="h-12 w-12 text-secondary" />}
             image="/team-insights.png" // Image of dashboard with engagement metrics
           />
           
           <ProductCard 
             title="Hyperion Engine" 
             description="Advanced analytics and AI-powered insights for teams, tracking player performance and generating real-time game analysis for coaching decisions."
-            icon={<Cpu className="h-12 w-12 text-primary/60" />}
+            icon={<Cpu className="h-12 w-12 text-secondary" />}
             image="/player-analytics.png" // Image of player performance analysis
           />
         </div>
