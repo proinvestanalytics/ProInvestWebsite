@@ -22,7 +22,7 @@ const About = () => {
               title="CEO & Founder"
               image="/ptrop.png"
               description="Hockey passion + entrepreneurial drive. Founded 360° Hockey Enterprises, developing hockey training solutions."
-              linkedinUrl="https://ca.linkedin.com/"
+              linkedinUrl="https://www.linkedin.com/in/philippetrop/"
             />
             
             <TeamMember
@@ -30,7 +30,7 @@ const About = () => {
               title="CBDO & Co-Founder"
               image="/blake.png"
               description="Combines a deep hockey passion with entrepreneurial drive. Sponsorship and partnership specialist skilled at bridging fans, brands, and leagues."
-              linkedinUrl="https://ca.linkedin.com/"
+              linkedinUrl="https://www.linkedin.com/in/blake-nielsen-proinvest/"
             />
             
             <TeamMember
@@ -38,7 +38,7 @@ const About = () => {
               title="CTO & Co-Founder"
               image="/sal.png"
               description="Computer engineer and real-time systems architect. Leads the Hyperion sub-second scoring engine and AI/ML integrations. Ensures platform scalability and data security."
-              linkedinUrl="https://ca.linkedin.com/"
+              linkedinUrl="https://www.linkedin.com/in/salvatore-papia-72875b295/"
             />
             
             <TeamMember
@@ -46,7 +46,7 @@ const About = () => {
               title="CFO"
               image="/martin.png"
               description="Former COO at BMO Trust, responsible for managing CAD $65B in assets. Provides large-scale financial expertise, investor relations, and strategic growth focus. Ensures a sustainable runway with rigorous financial oversight."
-              linkedinUrl="https://ca.linkedin.com/"
+              linkedinUrl="https://www.linkedin.com/in/martin-villeneuve-65bb6444/"
             />
           </div>
         </div>

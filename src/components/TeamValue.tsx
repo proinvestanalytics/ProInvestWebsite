@@ -63,7 +63,7 @@ const TeamValue: React.FC = () => {
               </div>
               
               <div className="mt-8">
-                <button className="bg-primary text-white py-3 px-6 rounded-lg shadow-lg hover:bg-primary/90 transition">
+                <button className="bg-primary text-white py-3 px-6 rounded-lg shadow-lg hover:bg-primary/90 transition" onClick={() => window.location.href = 'contact'}>
                   Book Team Demo
                 </button>
               </div>

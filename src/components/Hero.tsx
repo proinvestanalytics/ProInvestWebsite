@@ -23,10 +23,10 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <a
-                href="#try-contest"
+                href="contact"
                 className="btn-primary text-lg"
               >
-                Try One Game Contest
+                Play OGC
               </a>
               <button
                 onClick={openModal}
@@ -42,9 +42,9 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
           </div>
           <div className="md:w-1/2 flex justify-center">
             {/* Fixed width container to prevent stretching */}
-            <div className="relative" style={{ width: '320px' }}>
+            <div className="relative" style={{ width: '290px' }}>
               {/* Phone image container */}
-              <div className="rounded-xl overflow-hidden shadow-2xl border-4 border-white/10">
+              <div>
                 <img
                   src="/app-interface.png"
                   alt="One Game Contest mobile app interface"
@@ -55,7 +55,7 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
               {/* Live prediction indicator - positioned like in Image 1 */}
               <div 
                 className="absolute bg-white/90 backdrop-blur-sm text-primary px-4 py-2 rounded-lg shadow-lg z-20"
-                style={{ top: '20px', right: '-120px' }}
+                style={{ top: '20px', right: '-100px' }}
               >
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
@@ -66,12 +66,12 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
               {/* Excited fan image - positioned like in Image 1 */}
               <div 
                 className="absolute bg-white rounded-lg overflow-hidden shadow-xl z-20 border-2 border-primary/20"
-                style={{ bottom: '-20px', left: '-50px' }}
+                style={{ bottom: '-40px', left: '-50px' }}
               >
                 <img 
                   src="/excited-fan.png"
                   alt="Excited hockey fan"
-                  className="w-24 h-24 object-cover"
+                  className="w-32 h-32 object-cover"
                 />
               </div>
             </div>

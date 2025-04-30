@@ -10,9 +10,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm py-4">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link to="/">
-            <Logo />
-          </Link>
+          <Logo />
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
@@ -46,24 +44,24 @@ const Navbar: React.FC = () => {
 const NavLinks: React.FC = () => {
   return (
     <>
-      <Link 
-        to="/products" 
+      <a 
+        href="/products" 
         className="text-primary font-medium hover:text-secondary transition-colors duration-300"
       >
         Our Products
-      </Link>
-      <Link 
-        to="/about" 
+      </a>
+      <a 
+        href="/about" 
         className="text-primary font-medium hover:text-secondary transition-colors duration-300"
       >
         About
-      </Link>
-      <Link 
-        to="/contact" 
+      </a>
+      <a 
+        href="/contact" 
         className="text-primary font-medium hover:text-secondary transition-colors duration-300"
       >
         Contact Us
-      </Link>
+      </a>
     </>
   );
 };
