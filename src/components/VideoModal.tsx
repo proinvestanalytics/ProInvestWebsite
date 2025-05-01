@@ -55,7 +55,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
         <div className="aspect-w-16 aspect-h-9">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+            src="/OGCdemo.mp4"
             title="ProInvest Demo Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
