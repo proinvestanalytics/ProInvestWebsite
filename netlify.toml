@@ -1,3 +1,12 @@
+
+[
+build
+]
+  # Your build command
+  command = "npm run build" # or "yarn build"
+  # The directory to publish (your build output)
+  publish = "dist"
+
 [[
 redirects
 ]]
