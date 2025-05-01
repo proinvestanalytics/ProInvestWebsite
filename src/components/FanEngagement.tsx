@@ -12,23 +12,23 @@ const FanEngagement: React.FC = () => {
                 Transform Your Game Experience
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                One Game Contest puts you in the action. Make real-time predictions, compete with friends, and earn rewards while watching your favorite teams play.
+              One Game Contest puts you in the action. Make real-time predictions based on transparent, skill-based scoring, compete with friends, and earn rewards while watching your favorite teams play.
               </p>
               <div className="space-y-6">
                 <Feature 
                   icon={<Trophy className="h-6 w-6 text-secondary" />}
                   title="Predict & Win"
-                  description="Make predictions on plays, scores, and player performance as the game unfolds."
+                  description="Make predictions on plays, scores, and player performance based on transparent metrics as the game unfolds."
                 />
                 <Feature 
                   icon={<Target className="h-6 w-6 text-secondary" />}
                   title="Track Players"
-                  description="Follow your favorite players and get instant updates on their performance."
+                  description="Follow your favorite players and get instant updates on their actual on-ice performance."
                 />
                 <Feature 
                   icon={<Zap className="h-6 w-6 text-secondary" />}
                   title="Real-time Rewards"
-                  description="Earn points and rewards for accurate predictions during live games."
+                  description="Earn points and rewards for knowledge-based predictions during live games."
                 />
               </div>
             </div>

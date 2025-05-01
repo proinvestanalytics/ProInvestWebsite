@@ -7,13 +7,52 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('null');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Make the function async to use await
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    setSubmitStatus('null');
+    
+    try {
+      // Destructure the form data to use in the API call
+      const { name, email, message } = formData;
+      
+      // Call our backend API route instead of Airtable directly
+      const response = await fetch('/api/submit-contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message
+        })
+      });
+      
+      const result = await response.json();
+      
+      if (response.ok) {
+        console.log('Form submitted successfully:', result);
+        setSubmitStatus('success');
+        // Clear the form after successful submission
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        console.error('Form submission error:', result);
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -41,23 +80,23 @@ const Contact = () => {
                 <ContactInfo
                   icon={<Phone />}
                   title="Phone"
-                  info="+1 (555) 123-4567"
+                  info="+1 (647) 526-9334"
                 />
                 <ContactInfo
                   icon={<Mail />}
                   title="Email"
-                  info="contact@proinvest.com"
+                  info="blakenielsen@proinvest.trade"
                 />
                 <ContactInfo
                   icon={<MapPin />}
-                  title="Office"
-                  info="123 Hockey Avenue, Montreal, QC"
+                  title="Located"
+                  info="Montreal, QC & Toronto, ON"
                 />
               </div>
             </div>
             
             <div>
-              <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8">
+              <form action="https://hooks.airtable.com/workflows/v1/genericWebhook/appTdGGAOwnN8q4D8/wflsLMIGyFQWMP8Qu/wtriiXhnbqwyuBl8K" method="POST" className="bg-white rounded-2xl shadow-xl p-8"> {/*onSubmit={handleSubmit} */ }
                 <div className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -118,11 +157,30 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="w-full btn-primary flex items-center justify-center gap-2 group"
+                    disabled={isSubmitting}
+                    className={`w-full btn-primary flex items-center justify-center gap-2 group ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                   >
-                    <Send size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
-                    Send Message
+                    {isSubmitting ? (
+                      'Submitting...'
+                    ) : (
+                      <>
+                        <Send size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
+                        Send Message
+                      </>
+                    )}
                   </button>
+                  
+                  {submitStatus === 'success' && (
+                    <div className="mt-4 p-3 bg-green-50 text-green-700 rounded-lg">
+                      Your message has been sent successfully!
+                    </div>
+                  )}
+                  
+                  {submitStatus === 'error' && (
+                    <div className="mt-4 p-3 bg-red-50 text-red-700 rounded-lg">
+                      There was an error sending your message. Please try again later.
+                    </div>
+                  )}
                 </div>
               </form>
             </div>

@@ -20,7 +20,7 @@ const Products = () => {
           <div className="space-y-32">
             <ProductSection
               title="One Game Contest"
-              description="A revolutionary fan engagement platform that transforms how viewers interact with live NHL games. Make real-time predictions, track your favorite players, and earn rewards based on actual game performance. Our AI-powered system processes live game data to provide instant feedback and scoring."
+              description="A revolutionary fan engagement platform that transforms how viewers interact with live NHL games. Make real-time predictions, track your favorite players, and earn rewards based on actual game performance. Our transparent AI-powered system processes live game data based on actual player performance metrics to provide instant, fair feedback and scoring."
               features={[
                 "Real-time prediction system",
                 "Player performance tracking",
@@ -35,7 +35,7 @@ const Products = () => {
 
             <ProductSection
               title="ProInsight Suite"
-              description="A comprehensive management platform designed specifically for NHL teams to create and customize their OGC experiences. This powerful tool enables teams to engage fans directly, analyze engagement metrics, and create unique promotional opportunities."
+              description="A comprehensive management platform designed specifically for NHL teams to create and customize their OGC experiences. This powerful tool enables teams to engage fans directly, analyze engagement metrics, create unique promotional opportunities, and drive revenue through sponsored activations."
               features={[
                 "Custom game creation tools",
                 "Fan engagement analytics",
@@ -50,7 +50,7 @@ const Products = () => {
 
             <ProductSection
               title="Hyperion Engine"
-              description="Our state-of-the-art computer vision AI model that processes and analyzes live game footage in real-time. The Hyperion Engine tracks player movements, analyzes plays, and generates instant insights that power both the OGC platform and team analytics."
+              description="Our state-of-the-art computer vision AI model that processes and analyzes live game footage in real-time. The Hyperion Engine tracks player movements, analyzes plays, and generates instant insights that power both the OGC platform and team analytics. By objectively analyzing on-ice performance, Hyperion ensures completely transparent and fair player evaluation that fans can trust, unlike the opaque algorithms used in traditional betting platforms."
               features={[
                 "Real-time player tracking",
                 "Advanced play analysis",
