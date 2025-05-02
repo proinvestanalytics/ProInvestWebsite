@@ -90,7 +90,7 @@ const TeamValue: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Average ROI</p>
-                    <p className="text-2xl font-bold text-green-600">+32%</p>
+                    <p className="text-2xl font-bold text-green-600">+30%</p>
                   </div>
                 </div>
               </div>
