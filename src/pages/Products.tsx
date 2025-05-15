@@ -22,11 +22,11 @@ const Products = () => {
               title="One Game Contest"
               description="A revolutionary fan engagement platform that transforms how viewers interact with live NHL games. Make real-time predictions, track your favorite players, and earn rewards based on actual game performance. Our transparent AI-powered system processes live game data based on actual player performance metrics to provide instant, fair feedback and scoring."
               features={[
-                "Real-time prediction system",
-                "Player performance tracking",
-                "Reward system based on accuracy",
+                "Sub-second, real-time scoring",
                 "Live game integration",
-                "Social features and leaderboards"
+                "Reward system based on accuracy",
+                "Loyalty program integration",
+                "Social leaderboards and private contests"
               ]}
               icon={<Trophy className="w-12 h-12 text-secondary" />}
               imageUrl="/fan-app.png"
@@ -50,7 +50,7 @@ const Products = () => {
 
             <ProductSection
               title="Hyperion Engine"
-              description="Our state-of-the-art computer vision AI model that processes and analyzes live game footage in real-time. The Hyperion Engine tracks player movements, analyzes plays, and generates instant insights that power both the OGC platform and team analytics. By objectively analyzing on-ice performance, Hyperion ensures completely transparent and fair player evaluation that fans can trust, unlike the opaque algorithms used in traditional betting platforms."
+              description="ProInvest's proprietary computer vision model and AI game engine built to deliver real-time player scoring that is role-normalized and fully transparent. It evaluates every on-ice action to generate objective performance metrics that power the contest. Unlike typical tracking solutions, Hyperion enables fans to see player performance in context, creating a fair, skill-based engagement experience for fans. "
               features={[
                 "Real-time player tracking",
                 "Advanced play analysis",

@@ -28,7 +28,7 @@ const TeamValue: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary mb-2">Seamless Integration</h3>
-                    <p className="text-gray-600">Connect to your existing website or app with zero development effort required.</p>
+                    <p className="text-gray-600">Seamlessly embedded within your existing app with minimal technical lift and full brand alignment.</p>
                   </div>
                 </div>
                 
@@ -43,7 +43,7 @@ const TeamValue: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary mb-2">Fan Data Insights</h3>
-                    <p className="text-gray-600">Gather actionable fan behavior data for targeted campaigns and activation.</p>
+                    <p className="text-gray-600">Gather actionable fan behavior data for targeted sponsor activations, campaigns, and loyalty personalization.</p>
                   </div>
                 </div>
                 

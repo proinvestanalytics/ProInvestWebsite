@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
               Transform How Fans Experience Hockey
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-xl leading-relaxed">
-              Not gambling – a new category of fan engagement. Make real-time predictions, track favorite players, and earn rewards while watching live games.
+              Not gambling – a new category of fan engagement. Manage your lineup in real time, track favorite players, and earn rewards while watching live games.
             </p>
             <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <a

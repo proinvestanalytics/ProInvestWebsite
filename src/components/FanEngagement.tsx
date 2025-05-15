@@ -28,7 +28,7 @@ const FanEngagement: React.FC = () => {
                 <Feature 
                   icon={<Zap className="h-6 w-6 text-secondary" />}
                   title="Real-time Rewards"
-                  description="Earn points and rewards for knowledge-based predictions during live games."
+                  description="Earn loyalty points and rewards for knowledge-based predictions tied to live player performance."
                 />
               </div>
             </div>

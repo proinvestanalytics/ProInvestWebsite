@@ -37,7 +37,7 @@ const Products: React.FC = () => {
           
           <ProductCard 
             title="ProInsight Suite" 
-            description="Maximize value from your digital platforms. Create custom fan experiences, analyze engagement metrics, integrate sponsor activations, and drive team loyalty."
+            description="Maximize value from your digital platforms. Customize the in-game fan journey, analyze engagement metrics, integrate sponsor activations, and drive team loyalty."
             icon={<Layers className="h-12 w-12 text-secondary" />}
             image="/team-insights.png" // Image of dashboard with engagement metrics
           />
