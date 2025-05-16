@@ -56,7 +56,7 @@ const Products = () => {
                 "Contextual player evaluation",
                 "Role-normalized scoring system",
                 "Machine learning optimization",
-                "Enterprise-grade reliability for NHL scale"
+                "Enterprise-grade reliability for scale"
               ]}
               icon={<Cpu className="w-12 h-12 text-secondary" />}
               imageUrl="/player-analytics.png"
