@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
                 href="contact"
                 className="btn-primary text-lg"
               >
-                Play OGC
+                Request Demo Access
               </a>
               <button
                 onClick={openModal}
@@ -37,7 +37,7 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
               </button>
             </div>
             <div className="mt-8 pt-4 border-t border-white/20">
-              <p className="text-white/70 text-sm">October NHL pilots now open. Request your demo today.</p>
+              <p className="text-white/70 text-sm">Limited NHL pilot spots available for October 2025. Request your demo today.</p>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">

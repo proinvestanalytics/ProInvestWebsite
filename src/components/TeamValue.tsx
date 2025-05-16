@@ -43,7 +43,7 @@ const TeamValue: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary mb-2">Fan Data Insights</h3>
-                    <p className="text-gray-600">Gather actionable fan behavior data for targeted sponsor activations, campaigns, and loyalty personalization.</p>
+                    <p className="text-gray-600">Capture valuable first-party fan data during peak engagement for targeted activations and personalization.</p>
                   </div>
                 </div>
                 
@@ -57,14 +57,14 @@ const TeamValue: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-primary mb-2">New Revenue Streams</h3>
-                    <p className="text-gray-600">Create sponsorship opportunities and maximize your 50-50 and other engagement initiatives.</p>
+                    <p className="text-gray-600">Create new revenue through fan monetization, loyalty enhancements, and digital sponsorships.</p>
                   </div>
                 </div>
               </div>
               
               <div className="mt-8">
                 <button className="bg-primary text-white py-3 px-6 rounded-lg shadow-lg hover:bg-primary/90 transition" onClick={() => window.location.href = 'contact'}>
-                  Book Team Demo
+                  Request Pilot Information
                 </button>
               </div>
             </div>

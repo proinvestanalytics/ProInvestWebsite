@@ -37,14 +37,14 @@ const Products: React.FC = () => {
           
           <ProductCard 
             title="ProInsight Suite" 
-            description="Maximize value from your digital platforms. Customize the in-game fan journey, analyze engagement metrics, integrate sponsor activations, and drive team loyalty."
+            description="Maximize value from your digital platforms. AI-powered fan segmentation, customizable activations, and data-driven insights to enhance team loyalty."
             icon={<Layers className="h-12 w-12 text-secondary" />}
             image="/team-insights.png" // Image of dashboard with engagement metrics
           />
           
           <ProductCard 
             title="Hyperion Engine" 
-            description="Advanced analytics and AI-powered insights for teams, tracking player performance and generating real-time game analysis for coaching decisions."
+            description="Advanced analytics and AI-powered metrics tracking player performance in real-time, enhancing both fan engagement and team insights."
             icon={<Cpu className="h-12 w-12 text-secondary" />}
             image="/player-analytics.png" // Image of player performance analysis
           />

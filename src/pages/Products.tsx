@@ -20,13 +20,13 @@ const Products = () => {
           <div className="space-y-32">
             <ProductSection
               title="One Game Contest"
-              description="A revolutionary fan engagement platform that transforms how viewers interact with live NHL games. Make real-time predictions, track your favorite players, and earn rewards based on actual game performance. Our transparent AI-powered system processes live game data based on actual player performance metrics to provide instant, fair feedback and scoring."
+              description="A revolutionary fan engagement platform that transforms how viewers interact with live NHL games. Make real-time predictions, track your favorite players, and earn rewards based on actual game performance. Our transparent AI-powered system processes live game data to provide instant, fair feedback and scoring, keeping fans engaged during breaks when they would typically be distracted by competing apps."
               features={[
                 "Sub-second, real-time scoring",
                 "Live game integration",
-                "Reward system based on accuracy",
+                "Reward system based on accuracy - not gambling",
                 "Loyalty program integration",
-                "Social leaderboards and private contests"
+                "Sponsor integration opportunities"
               ]}
               icon={<Trophy className="w-12 h-12 text-secondary" />}
               imageUrl="/fan-app.png"
@@ -35,13 +35,13 @@ const Products = () => {
 
             <ProductSection
               title="ProInsight Suite"
-              description="A comprehensive management platform designed specifically for NHL teams to create and customize their OGC experiences. This powerful tool enables teams to engage fans directly, analyze engagement metrics, create unique promotional opportunities, and drive revenue through sponsored activations."
+              description="A comprehensive management platform empowering NHL teams to maximize fan engagement value throughout the season. This AI-powered dashboard transforms fan data into actionable insights, designs promotional campaigns with measurable ROI, and optimizes revenue through both sponsorships and direct fan monetization. Teams can seamlessly customize OGC's fan journey while integrating with existing loyalty programs."
               features={[
-                "Custom game creation tools",
-                "Fan engagement analytics",
-                "Promotional campaign management",
-                "Team-specific customization",
-                "Integration with existing systems"
+                "Design custom fan experiences",
+                "First-party fan data analytics",
+                "Revenue-generating promotional campaigns",
+                "Team-specific branding and customization",
+                "Seamless integration with existing systems"
               ]}
               icon={<Layers className="w-12 h-12 text-secondary" />}
               imageUrl="/team-insights.png"
@@ -50,13 +50,13 @@ const Products = () => {
 
             <ProductSection
               title="Hyperion Engine"
-              description="ProInvest's proprietary computer vision model and AI game engine built to deliver real-time player scoring that is role-normalized and fully transparent. It evaluates every on-ice action to generate objective performance metrics that power the contest. Unlike typical tracking solutions, Hyperion enables fans to see player performance in context, creating a fair, skill-based engagement experience for fans. "
+              description="ProInvest's proprietary computer vision model and AI game engine delivers real-time player performance insights with role-specific normalization and transparency. Hyperion transforms the viewing experience by providing context-rich metrics fans can understand. Our engine creates a fair, skill-based engagement platform that powers OGC while enhancing fan-game connection. Teams benefit from increased engagement during typically lost moments and diverse sponsor activation opportunities throughout the fan experience."
               features={[
-                "Real-time player tracking",
-                "Advanced play analysis",
-                "Performance metrics generation",
+                "Sub-second performance analysis",
+                "Contextual player evaluation",
+                "Role-normalized scoring system",
                 "Machine learning optimization",
-                "Scalable processing architecture"
+                "Enterprise-grade reliability for NHL scale"
               ]}
               icon={<Cpu className="w-12 h-12 text-secondary" />}
               imageUrl="/player-analytics.png"

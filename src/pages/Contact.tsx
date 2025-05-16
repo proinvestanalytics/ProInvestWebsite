@@ -77,11 +77,11 @@ const Contact = () => {
             <div>
               <h2 className="text-3xl font-bold text-primary mb-8">Get in Touch</h2>
               <div className="space-y-6">
-                <ContactInfo
+                {/*<ContactInfo
                   icon={<Phone />}
                   title="Phone"
                   info="+1 (647) 526-9334"
-                />
+                />*/}
                 <ContactInfo
                   icon={<Mail />}
                   title="Email"

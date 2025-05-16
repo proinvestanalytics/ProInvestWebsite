@@ -12,7 +12,7 @@ const FanEngagement: React.FC = () => {
                 Transform Your Game Experience
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              One Game Contest puts you in the action. Make real-time predictions based on transparent, skill-based scoring, compete with friends, and earn rewards while watching your favorite teams play.
+              One Game Contest puts you in the action. Make real-time predictions based on transparent, skill-based scoring, compete with fellow fans, and earn rewards while watching your favorite teams play.
               </p>
               <div className="space-y-6">
                 <Feature 

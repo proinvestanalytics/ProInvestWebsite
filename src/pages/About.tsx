@@ -9,8 +9,46 @@ const About = () => {
         <div className="container mx-auto px-4 relative">
           <h1 className="text-5xl md:text-6xl font-bold text-center mb-8 bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">Who We Are</h1>
           <p className="text-xl text-center text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Meet the team behind ProInvest's innovative hockey technology solutions
+            Meet the team behind ProInvest's innovative hockey technology solutions, combining deep sports expertise with cutting-edge AI development to transform the fan experience.
           </p>
+        </div>
+      </section>
+
+      {/* Our Mission Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl font-bold text-primary text-center mb-8">Our Mission</h2>
+            <div className="bg-gray-50 shadow-lg rounded-lg p-8">
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                At ProInvest Analytics, we transform passive spectators into active participants during the moments that matter most. By embedding real-time gamification and advanced analytics directly into team applications, we capture fan attention during typically lost moments and convert it into measurable value.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                Through our integrated platform, we:
+              </p>
+              <ul className="space-y-2 mb-6">
+                <li className="flex items-start">
+                  <span className="text-secondary font-bold mr-2 text-lg">•</span>
+                  <span className="text-lg">Deepen fan engagement during commercial breaks and game pauses</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary font-bold mr-2 text-lg">•</span>
+                  <span className="text-lg">Create new revenue streams for teams through both sponsorships and direct fan monetization</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary font-bold mr-2 text-lg">•</span>
+                  <span className="text-lg">Deliver actionable first-party data for teams and partners</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary font-bold mr-2 text-lg">•</span>
+                  <span className="text-lg">Strengthen the connection between fans and the game they love</span>
+                </li>
+              </ul>
+              <p className="text-gray-700 text-lg leading-relaxed font-semibold">
+                We're not just creating another app - we're revolutionizing how hockey is experienced by everyone in the ecosystem: teams, sponsors, and most importantly, fans.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -21,7 +59,7 @@ const About = () => {
               name="Philippe Trop"
               title="CEO & Founder"
               image="/ptrop.png"
-              description="Hockey passion + entrepreneurial drive. Founded 360° Hockey Enterprises, developing hockey training solutions."
+              description="Hockey passion + entrepreneurial drive. Founded 360° Hockey Enterprises, developing hockey training solutions. Combines deep hockey knowledge with business strategy to drive fan engagement solutions."
               linkedinUrl="https://www.linkedin.com/in/philippetrop/"
             />
             
@@ -48,6 +86,23 @@ const About = () => {
               description="Former COO at BMO Trust, responsible for managing CAD $65B in assets. Provides large-scale financial expertise, investor relations, and strategic growth focus. Ensures a sustainable runway with rigorous financial oversight."
               linkedinUrl="https://www.linkedin.com/in/martin-villeneuve-65bb6444/"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Powered by NextAI Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-row items-center justify-center">
+            <h3 className="text-3xl font-semibold text-gray-700 mr-6">Powered by</h3>
+            <a 
+              href="https://www.nextcanada.com/next-ai/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-48 h-auto transition-opacity duration-300 hover:opacity-80"
+            >
+              <img src="/next-ai-logo.png" alt="Next Canada Logo" className="w-full h-auto" />
+            </a>
           </div>
         </div>
       </section>
