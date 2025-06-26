@@ -57,7 +57,7 @@ const ProductsShowcase: React.FC = () => {
     {
       id: 'ssp',
       icon: '🏆',
-      title: 'Seventh Skater',
+      title: 'Seventh Skater Club',
       subtitle: 'Lifetime Loyalty Ecosystem',
       status: 'complete',
       statusText: '✓ 95% Complete - Pilot Ready',

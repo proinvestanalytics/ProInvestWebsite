@@ -2,7 +2,7 @@ import React from 'react';
 
 const NextAISection = () => {
   return (
-    <section className="py-24 bg-primary-baby-powder">
+    <section className="py-8 md:py-12 bg-primary-baby-powder">
       <div className="max-w-4xl mx-auto px-4">
         <div className="bg-white rounded-3xl p-12 shadow-xl border-2 border-primary-mint/10">
           {/* NextAI Logo */}

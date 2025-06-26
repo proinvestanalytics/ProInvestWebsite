@@ -84,7 +84,7 @@ const DevelopmentStatus: React.FC = () => {
   };
 
   return (
-    <section id="development" className="py-20 bg-[#FDFDF9]">
+    <section id="development" className="py-8 md:py-12 bg-primary-baby-powder">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">

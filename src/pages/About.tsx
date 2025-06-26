@@ -70,7 +70,7 @@ const About = () => {
                 </li>
               </ul>
               <p className="text-gray-700 text-lg leading-relaxed font-semibold">
-                We're not just creating another app - we're revolutionizing how hockey is experienced by everyone in the ecosystem: teams, sponsors, and most importantly, fans.
+              We're not just building another app - we're revolutionizing how hockey is experienced by teams, sponsors, and fans.
               </p>
             </div>
           </div>

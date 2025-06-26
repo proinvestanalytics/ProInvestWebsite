@@ -24,10 +24,10 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div className="space-y-8 animate-fadeInUp">
-            {/* Badge */}
+            {/* Badge 
             <div className="inline-flex items-center gap-2 bg-[#00B88A]/20 border border-[#00B88A]/30 text-[#00B88A] px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm">
               🏒 NHL Pilot Program - Limited Spots Available
-            </div>
+            </div>*/}
 
             {/* Headline */}
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
 
             {/* Subtitle */}
             <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
-              Building an integrated platform that enables NHL teams to own their fan engagement during live games and build lifetime fan loyalty. Advanced WebView integration with AI-powered systems in development.
+            Enable NHL teams to generate new revenue during live games through real-time fan engagement and lifetime loyalty programs. Seamlessly integrates into existing team apps.
             </p>
 
             {/* Stats */}

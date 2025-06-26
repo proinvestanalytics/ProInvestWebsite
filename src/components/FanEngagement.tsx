@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, Target, Zap } from 'lucide-react';
+import { Trophy, Target, Zap, BadgeDollarSign, Database, HeartHandshake } from 'lucide-react';
 
 const FanEngagement: React.FC = () => {
   return (
@@ -12,30 +12,30 @@ const FanEngagement: React.FC = () => {
                 Transform Your Game Experience
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              One Game Contest puts you in the action. Make real-time predictions based on transparent, skill-based scoring, compete with fellow fans, and earn rewards while watching your favorite teams play.
+              Teams monetize fan engagement through real-time contests and lifetime loyalty programs. Generate new digital inventory while building deeper fan relationships that last decades.
               </p>
               <div className="space-y-6">
                 <Feature 
-                  icon={<Trophy className="h-6 w-6 text-secondary" />}
-                  title="Predict & Win"
-                  description="Make predictions on plays, scores, and player performance based on transparent metrics as the game unfolds."
+                  icon={<BadgeDollarSign className="h-6 w-6 text-secondary" />}
+                  title="Revenue Generation"
+                  description="Create new sponsorship inventory through contextual activations, achievement badges, and premium features during live games."
                 />
                 <Feature 
-                  icon={<Target className="h-6 w-6 text-secondary" />}
-                  title="Track Players"
-                  description="Follow your favorite players and get instant updates on their actual on-ice performance."
+                  icon={<Database className="h-6 w-6 text-secondary" />}
+                  title="Fan Data Ownership"
+                  description="Capture valuable first-party fan data and behavior analytics through your own platform instead of losing it to external apps."
                 />
                 <Feature 
-                  icon={<Zap className="h-6 w-6 text-secondary" />}
-                  title="Real-time Rewards"
-                  description="Earn loyalty points and rewards for knowledge-based predictions tied to live player performance."
+                  icon={<HeartHandshake className="h-6 w-6 text-secondary" />}
+                  title="Loyalty Monetization"
+                  description="Build lifetime fan relationships through career progression that drives premium subscriptions and repeat engagement."
                 />
               </div>
             </div>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/app-integration.png"
+                  src="/2screens.png"
                   alt="Fan engagement platform"
                   className="w-full h-auto"
                 />

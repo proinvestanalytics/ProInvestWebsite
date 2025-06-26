@@ -24,7 +24,7 @@ const CTASection: React.FC = () => {
               Experience the Platform
             </h2>
             <p className="text-xl mb-12 leading-relaxed opacity-90">
-              Request access to the ProInvest app to experience our integrated platform through proven WebView technology. See how the complete ecosystem works for NHL team deployment and co-development opportunities.
+            Request access to OffPost to experience our integrated platform through proven WebView technology. See how the complete ecosystem works for NHL team deployment and co-development opportunities.
             </p>
 
             {/* CTA Buttons */}
@@ -33,7 +33,7 @@ const CTASection: React.FC = () => {
                 onClick={() => setModalType('access')}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#17242C] font-semibold rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group"
               >
-                Request ProInvest App Access
+                Request OffPost App Access
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
               <button
@@ -56,7 +56,7 @@ const CTASection: React.FC = () => {
       <CustomModal
         isOpen={modalType === 'access'}
         onClose={closeModal}
-        title="ProInvest Platform Access"
+        title="OffPost Platform Access"
         contactPath="/contact" // Changed from contactEmail
       >
         <p className="mb-4">An enterprise platform demonstration is available for qualified teams and partners. Access includes:</p>
