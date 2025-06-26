@@ -89,7 +89,7 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
               {/* Phone image container */}
               <div className="relative z-10">
                 <img
-                  src="/app-interface.png"
+                  src="/offpostscreen.png"
                   alt="One Game Contest mobile app interface"
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />
