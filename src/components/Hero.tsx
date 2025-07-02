@@ -68,13 +68,13 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
                 Request Demo Access
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
-              <button
+              {/*<button
                 onClick={openModal}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-[#00B88A]/30 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 group"
               >
                 <Play className="w-5 h-5 mr-2" />
                 Watch Demo
-              </button>
+              </button>*/}
             </div>
 
             {/* Bottom Notice */}
