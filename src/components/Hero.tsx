@@ -85,9 +85,10 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
 
           {/* Visual */}
           <div className="flex justify-center lg:justify-end animate-fadeInRight">
-            <div className="relative" style={{ width: '290px' }}>
+            {/* Large screens: expanded container with space for Live Predictions */}
+            <div className="relative hidden lg:block" style={{ width: '390px', paddingRight: '100px' }}>
               {/* Phone image container */}
-              <div className="relative z-10">
+              <div className="relative z-10" style={{ width: '290px' }}>
                 <img
                   src="/offpostscreen.png"
                   alt="One Game Contest mobile app interface"
@@ -98,7 +99,47 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
               {/* Live prediction indicator */}
               <div 
                 className="absolute bg-white/90 backdrop-blur-sm text-[#004953] px-4 py-2 rounded-lg shadow-lg z-20 animate-pulse"
-                style={{ top: '20px', right: '-100px' }}
+                style={{ top: '20px', right: '0px' }}
+              >
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-[#00B88A] rounded-full animate-pulse"></div>
+                  <span className="font-semibold">Live Predictions</span>
+                </div>
+                {/* Glow effect behind the indicator */}
+                <div className="absolute inset-0 bg-[#00B88A]/30 rounded-lg blur-md opacity-60 -z-10"></div>
+              </div>
+              
+              {/* Excited fan image */}
+              <div 
+                className="absolute bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden shadow-xl z-20 border border-[#00B88A]/20"
+                style={{ bottom: '-40px', left: '-50px' }}
+              >
+                <img 
+                  src="/excited-fan.png"
+                  alt="Excited hockey fan"
+                  className="w-32 h-32 object-cover"
+                />
+              </div>
+
+              {/* Background glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#00B88A]/20 to-transparent rounded-2xl blur-xl opacity-50 -z-10"></div>
+            </div>
+
+            {/* Small screens: original centered container */}
+            <div className="relative lg:hidden" style={{ width: '290px' }}>
+              {/* Phone image container */}
+              <div className="relative z-10">
+                <img
+                  src="/offpostscreen.png"
+                  alt="One Game Contest mobile app interface"
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                />
+              </div>
+              
+              {/* Live prediction indicator - positioned safely on small screens */}
+              <div 
+                className="absolute bg-white/90 backdrop-blur-sm text-[#004953] px-4 py-2 rounded-lg shadow-lg z-20 animate-pulse"
+                style={{ top: '20px', right: '-80px' }}
               >
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-[#00B88A] rounded-full animate-pulse"></div>
