@@ -1,12 +1,13 @@
 // Hero.tsx - Combined version with best elements from both
 import React from 'react';
 import { Play, ArrowDown, ArrowRight } from 'lucide-react';
+import VideoModal from './VideoModal';
 
-interface HeroProps {
-  openModal: () => void;
-}
+const Hero: React.FC = () => {
+  const [isVideoModalOpen, setIsVideoModalOpen] = React.useState(false);
+  const handleOpenModal = () => setIsVideoModalOpen(true);
+  const handleCloseModal = () => setIsVideoModalOpen(false);
 
-const Hero: React.FC<HeroProps> = ({ openModal }) => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-[#17242C] via-[#10605A] to-[#004953] text-white overflow-hidden">
       {/* Background Pattern */}
@@ -68,13 +69,13 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
                 Request Demo Access
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
-              {/*<button
-                onClick={openModal}
+              <button
+                onClick={handleOpenModal}
                 className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-[#00B88A]/30 text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 group"
               >
                 <Play className="w-5 h-5 mr-2" />
                 Watch Demo
-              </button>*/}
+              </button>
             </div>
 
             {/* Bottom Notice */}
@@ -172,6 +173,13 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="w-6 h-6 text-[#00B88A]" />
       </div>
+
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={handleCloseModal}
+        videoUrl="https://www.youtube.com/watch?v=P-iNO2u3Ee0"
+        title="OffPost Demo"
+      />
     </section>
   );
 };

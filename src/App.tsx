@@ -33,7 +33,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
-        <VideoModal isOpen={isVideoModalOpen} onClose={closeVideoModal} />
+        <VideoModal isOpen={isVideoModalOpen} onClose={closeVideoModal} videoUrl="https://www.youtube.com/watch?v=P-iNO2u3Ee0" title="ProInvest Demo" />
       </div>
     </Router>
   );

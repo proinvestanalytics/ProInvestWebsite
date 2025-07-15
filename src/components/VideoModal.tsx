@@ -4,9 +4,11 @@ import { X } from 'lucide-react';
 interface VideoModalProps {
   isOpen: boolean;
   onClose: () => void;
+  videoUrl: string;
+  title: string;
 }
 
-const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
+const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose, videoUrl, title }) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -37,6 +39,18 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
 
   if (!isOpen) return null;
 
+  // Convert YouTube watch URL to embed URL
+  let embedUrl = '';
+  if (videoUrl.includes('youtube.com/watch?v=')) {
+    const videoId = videoUrl.split('v=')[1]?.split('&')[0];
+    embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+  } else if (videoUrl.includes('youtu.be/')) {
+    const videoId = videoUrl.split('youtu.be/')[1]?.split('?')[0];
+    embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+  } else {
+    embedUrl = videoUrl;
+  }
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
       <div 
@@ -44,7 +58,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
         className="bg-white rounded-lg w-full max-w-4xl shadow-xl overflow-hidden"
       >
         <div className="p-4 flex justify-between items-center border-b">
-          <h3 className="text-xl font-semibold text-primary">ProInvest Demo</h3>
+          <h3 className="text-xl font-semibold text-primary">{title}</h3>
           <button 
             onClick={onClose}
             className="text-gray-500 hover:text-primary transition-colors"
@@ -55,7 +69,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ isOpen, onClose }) => {
         <div className="aspect-w-16 aspect-h-9">
           <iframe
             className="w-full h-full"
-            src="/OGCdemo.mp4"
+            src={embedUrl}
             title="ProInvest Demo Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,5 +1,6 @@
-import React from 'react';
-import { CheckCircle, AlertCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { CheckCircle, AlertCircle, Play } from 'lucide-react';
+import VideoModal from '../VideoModal';
 
 interface ProductFeature {
   icon: string;
@@ -25,6 +26,8 @@ interface Product {
 }
 
 const ProductsShowcase: React.FC = () => {
+  const [ogcModalOpen, setOgcModalOpen] = useState(false);
+  const [sscModalOpen, setSscModalOpen] = useState(false);
   const products: Product[] = [
     {
       id: 'ogc',
@@ -155,6 +158,49 @@ const ProductsShowcase: React.FC = () => {
           const StatusIcon = statusStyles.icon;
           const isReverse = index % 2 === 1;
 
+          // Video button logic
+          let showVideoButton = false;
+          let videoButton = null;
+          if (product.id === 'ogc') {
+            showVideoButton = true;
+            videoButton = (
+              <>
+                <button
+                  onClick={() => setOgcModalOpen(true)}
+                  className="mb-6 inline-flex items-center gap-2 px-6 py-2 rounded-full bg-gradient-to-r from-[#00B88A] to-[#008C8D] text-white font-semibold shadow-md hover:from-[#00A378] hover:to-[#007A7B] transition-all duration-300"
+                >
+                  <Play className="w-5 h-5" />
+                  Watch OGC Demo
+                </button>
+                <VideoModal
+                  isOpen={ogcModalOpen}
+                  onClose={() => setOgcModalOpen(false)}
+                  videoUrl="https://www.youtube.com/watch?v=L3PnHq9e9jk"
+                  title="OGC Demo"
+                />
+              </>
+            );
+          } else if (product.id === 'ssp') {
+            showVideoButton = true;
+            videoButton = (
+              <>
+                <button
+                  onClick={() => setSscModalOpen(true)}
+                  className="mb-6 inline-flex items-center gap-2 px-6 py-2 rounded-full bg-gradient-to-r from-[#00B88A] to-[#008C8D] text-white font-semibold shadow-md hover:from-[#00A378] hover:to-[#007A7B] transition-all duration-300"
+                >
+                  <Play className="w-5 h-5" />
+                  Watch SSC Demo
+                </button>
+                <VideoModal
+                  isOpen={sscModalOpen}
+                  onClose={() => setSscModalOpen(false)}
+                  videoUrl="https://www.youtube.com/watch?v=da-8ziq-jeA"
+                  title="SSC Demo"
+                />
+              </>
+            );
+          }
+
           return (
             <div key={product.id} className="mb-32 last:mb-0">
               <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${isReverse ? 'lg:grid-flow-col-dense' : ''}`}>
@@ -210,6 +256,7 @@ const ProductsShowcase: React.FC = () => {
 
                 {/* Product Visual */}
                 <div className={`${isReverse ? 'lg:col-start-1' : ''}`}>
+                  {showVideoButton && videoButton}
                   <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
                     <div className="bg-[#D4EDEA] border-2 border-dashed border-[#00B88A] rounded-2xl overflow-hidden">
                       <img 
