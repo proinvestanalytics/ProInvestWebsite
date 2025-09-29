@@ -40,23 +40,25 @@ const Hero: React.FC = () => {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl text-gray-300 leading-relaxed max-w-xl">
-            Enable NHL teams to generate new revenue during live games through real-time fan engagement and lifetime loyalty programs. Seamlessly integrates into existing team apps.
-            </p>
+            <div className="grid grid-cols-3 gap-6">
+              <p className="col-span-3 text-xl text-gray-300 leading-relaxed">
+              The complete AI-Powered Fan Engagement Infrastructure for pro teams to centralize their fan ecosystem. Reduce vendor sprawl, capture live attention, cultivate lifetime loyalty, and turn first-party data into measurable sponsor ROI.
+              </p>
+            </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 py-8">
-              <div className="bg-gradient-to-br from-white/10 to-transparent backdrop-blur-lg rounded-2xl border border-[#00B88A]/40 p-6 text-center group hover:transform hover:scale-105 transition-all duration-300">
-                <div className="text-3xl font-bold bg-gradient-to-r from-[#33FFC7] to-[#00B88A] bg-clip-text text-transparent mb-2">85%</div>
-                <div className="text-sm text-gray-300">Platform Complete</div>
+            <div className="grid grid-cols-3 gap-3 sm:gap-6 py-8">
+              <div className="bg-gradient-to-br from-white/10 to-transparent backdrop-blur-lg rounded-2xl border border-[#00B88A]/40 p-3 sm:p-6 text-center group hover:transform hover:scale-105 transition-all duration-300">
+                <div className="text-lg sm:text-3xl font-bold bg-gradient-to-r from-[#33FFC7] to-[#00B88A] bg-clip-text text-transparent mb-1 sm:mb-2">AI-Powered</div>
+                <div className="text-xs sm:text-sm text-gray-300">Driving Engagement & Insight</div>
               </div>
-              <div className="bg-gradient-to-br from-white/10 to-transparent backdrop-blur-lg rounded-2xl border border-[#00B88A]/40 p-6 text-center group hover:transform hover:scale-105 transition-all duration-300">
-                <div className="text-3xl font-bold bg-gradient-to-r from-[#33FFC7] to-[#00B88A] bg-clip-text text-transparent mb-2">Proven</div>
-                <div className="text-sm text-gray-300">WebView Integration</div>
+              <div className="bg-gradient-to-br from-white/10 to-transparent backdrop-blur-lg rounded-2xl border border-[#00B88A]/40 p-3 sm:p-6 text-center group hover:transform hover:scale-105 transition-all duration-300">
+                <div className="text-lg sm:text-3xl font-bold bg-gradient-to-r from-[#33FFC7] to-[#00B88A] bg-clip-text text-transparent mb-1 sm:mb-2">Unified</div>
+                <div className="text-xs sm:text-sm text-gray-300">Engagement, Loyalty & Data in One</div>
               </div>
-              <div className="bg-gradient-to-br from-white/10 to-transparent backdrop-blur-lg rounded-2xl border border-[#00B88A]/40 p-6 text-center group hover:transform hover:scale-105 transition-all duration-300">
-                <div className="text-3xl font-bold bg-gradient-to-r from-[#33FFC7] to-[#00B88A] bg-clip-text text-transparent mb-2">Jan 2026</div>
-                <div className="text-sm text-gray-300">Pilot Timeline</div>
+              <div className="bg-gradient-to-br from-white/10 to-transparent backdrop-blur-lg rounded-2xl border border-[#00B88A]/40 p-3 sm:p-6 text-center group hover:transform hover:scale-105 transition-all duration-300">
+                <div className="text-lg sm:text-3xl font-bold bg-gradient-to-r from-[#33FFC7] to-[#00B88A] bg-clip-text text-transparent mb-1 sm:mb-2">Late 2025</div>
+                <div className="text-xs sm:text-sm text-gray-300">Target Pilot Timeline</div>
               </div>
             </div>
 
@@ -80,88 +82,30 @@ const Hero: React.FC = () => {
 
             {/* Bottom Notice */}
             <div className="pt-4 border-t border-white/20">
-              <p className="text-gray-400 text-sm">Limited NHL pilot spots available for January 2026. Request your demo today.</p>
+              <p className="text-gray-400 text-sm">Limited pilot spots available for this season. Request your demo today.</p>
             </div>
           </div>
 
           {/* Visual */}
           <div className="flex justify-center lg:justify-end animate-fadeInRight">
-            {/* Large screens: expanded container with space for Live Predictions */}
-            <div className="relative hidden lg:block" style={{ width: '390px', paddingRight: '100px' }}>
-              {/* Phone image container */}
-              <div className="relative z-10" style={{ width: '290px' }}>
-                <img
-                  src="/offpostscreen.png"
-                  alt="One Game Contest mobile app interface"
-                  className="w-full h-auto rounded-2xl shadow-2xl"
-                />
-              </div>
-              
-              {/* Live prediction indicator */}
-              <div 
-                className="absolute bg-white/90 backdrop-blur-sm text-[#004953] px-4 py-2 rounded-lg shadow-lg z-20 animate-pulse"
-                style={{ top: '20px', right: '0px' }}
-              >
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-[#00B88A] rounded-full animate-pulse"></div>
-                  <span className="font-semibold">Live Predictions</span>
-                </div>
-                {/* Glow effect behind the indicator */}
-                <div className="absolute inset-0 bg-[#00B88A]/30 rounded-lg blur-md opacity-60 -z-10"></div>
-              </div>
-              
-              {/* Excited fan image */}
-              <div 
-                className="absolute bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden shadow-xl z-20 border border-[#00B88A]/20"
-                style={{ bottom: '-40px', left: '-50px' }}
-              >
-                <img 
-                  src="/excited-fan.png"
-                  alt="Excited hockey fan"
-                  className="w-32 h-32 object-cover"
-                />
-              </div>
-
+            {/* Large screens */}
+            <div className="relative hidden lg:block">
+              <img
+                src="/appShowcase.png"
+                alt="OffPost app showcase"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
               {/* Background glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#00B88A]/20 to-transparent rounded-2xl blur-xl opacity-50 -z-10"></div>
             </div>
 
-            {/* Small screens: original centered container */}
-            <div className="relative lg:hidden" style={{ width: '290px' }}>
-              {/* Phone image container */}
-              <div className="relative z-10">
-                <img
-                  src="/offpostscreen.png"
-                  alt="One Game Contest mobile app interface"
-                  className="w-full h-auto rounded-2xl shadow-2xl"
-                />
-              </div>
-              
-              {/* Live prediction indicator - positioned safely on small screens */}
-              <div 
-                className="absolute bg-white/90 backdrop-blur-sm text-[#004953] px-4 py-2 rounded-lg shadow-lg z-20 animate-pulse"
-                style={{ top: '20px', right: '-80px' }}
-              >
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-[#00B88A] rounded-full animate-pulse"></div>
-                  <span className="font-semibold">Live Predictions</span>
-                </div>
-                {/* Glow effect behind the indicator */}
-                <div className="absolute inset-0 bg-[#00B88A]/30 rounded-lg blur-md opacity-60 -z-10"></div>
-              </div>
-              
-              {/* Excited fan image */}
-              <div 
-                className="absolute bg-white/10 backdrop-blur-lg rounded-lg overflow-hidden shadow-xl z-20 border border-[#00B88A]/20"
-                style={{ bottom: '-40px', left: '-50px' }}
-              >
-                <img 
-                  src="/excited-fan.png"
-                  alt="Excited hockey fan"
-                  className="w-32 h-32 object-cover"
-                />
-              </div>
-
+            {/* Small screens */}
+            <div className="relative lg:hidden">
+              <img
+                src="/appShowcase.png"
+                alt="OffPost app showcase"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
               {/* Background glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#00B88A]/20 to-transparent rounded-2xl blur-xl opacity-50 -z-10"></div>
             </div>

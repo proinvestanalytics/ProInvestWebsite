@@ -46,7 +46,7 @@ const About = () => {
             <h2 className="text-4xl font-bold text-primary text-center mb-8">Our Mission</h2>
             <div className="bg-gray-50 shadow-lg rounded-lg p-8">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                At ProInvest Analytics, we transform passive spectators into active participants during the moments that matter most. By embedding real-time gamification and advanced analytics directly into team applications, we capture fan attention during typically lost moments and convert it into measurable value.
+              We transform passive spectators into active participants during live games and throughout the season. By building complete team applications with real-time contests and lifetime loyalty built in, we capture fan attention during commercial breaks, game pauses, and year-round moments, converting that engagement into measurable value teams control.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
                 Through our integrated platform, we:

@@ -14,24 +14,24 @@ const WebViewIntegration: React.FC = () => {
           <div className="max-w-4xl mx-auto text-center">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-[#00B88A]/20 border border-[#00B88A]/30 text-[#00B88A] px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm mb-8">
-              ✓ Integration Model Proven
+              ✓ Full App Deployment Proven
             </div>
 
             {/* Title */}
             <h2 className="text-4xl font-bold mb-6">
-              Seamless Team App Integration
+              Seamless App Deployment for Teams & Leagues
             </h2>
 
             {/* Description */}
             <p className="text-xl text-[#F7F2F0] mb-12 leading-relaxed">
-              Our complete platform integrates seamlessly into existing NHL team mobile applications through proven WebView technology. The ProInvest app on TestFlight demonstrates the exact integration model, eliminating technical risk and proving deployment viability for co-development partnerships.
+            We build and ship complete white-label league + team mobile apps. The OffPost demo shows the exact deployment model, de-risking rollout and proving production readiness.
             </p>
 
             {/* Integration Demo */}
             <div className="bg-white/5 backdrop-blur-lg rounded-3xl border border-[#00B88A]/20 p-8 mb-12">
               <h3 className="text-[#00B88A] text-xl font-bold mb-4">Experience It Live</h3>
               <p className="text-[#F7F2F0] mb-8">
-                Teams and co-development partners can immediately access and test both OGC and Seventh Skater through the ProInvest app on TestFlight - the same WebView integration that would be deployed in team applications.
+                The OffPost demo app shows both paths in action, proving functionality and eliminating technical risk for new deployments.
               </p>
 
               {/* Demo Features */}
@@ -61,7 +61,7 @@ const WebViewIntegration: React.FC = () => {
             </button>
 
             <p className="text-sm mt-6 opacity-75">
-              NextAI-validated • Enterprise Platform • Co-development Opportunities • January 2026 Pilot Timeline
+            NextAI-validated • Enterprise platform • Co-development opportunities • Pilot timeline: late 2025
             </p>
           </div>
         </div>

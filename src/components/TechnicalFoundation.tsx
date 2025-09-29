@@ -4,23 +4,18 @@ const PlatformArchitecture: React.FC = () => {
   const architectureFeatures = [
     {
       icon: "🏗️",
-      title: "Enterprise Platform",
-      description: "Complete three-product ecosystem with professional UI/UX, real-time functionality, and team-specific customization capabilities ready for immediate deployment."
+      title: "Platform Infrastructure",
+      description: "Complete three-product ecosystem with professional UI/UX, real-time capability, and team-level customization. "
     },
     {
       icon: "🔧",
-      title: "WebView Integration",
-      description: "Proven integration model demonstrated through ProInvest app. Teams can experience exact deployment method eliminating technical risk and concerns."
-    },
-    {
-      icon: "📡",
-      title: "Real-time Systems",
-      description: "Live game data integration, 2-second score updates, player swap tracking, and real-time leaderboards with enterprise-grade performance."
+      title: "Deployment Options",
+      description: "Build complete standalone mobile apps or embed via WebView when existing infrastructure must be retained. OffPost demo proves both deployment paths."
     },
     {
       icon: "🛡️",
-      title: "Skill-Based Design",
-      description: "Hockey knowledge and strategic decision-making platform with no gambling elements. Completely legal for team operation and fan engagement."
+      title: "Data Governance",
+      description: "Unified fan-ID foundation ensures first-party attribution. Encryption in transit/at rest with GDPR-aware practices. Skill-based, non-gambling design for family-friendly operation."
     }
   ];
 
@@ -36,12 +31,12 @@ const PlatformArchitecture: React.FC = () => {
             Technical Foundation
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Enterprise-grade platform architecture built for NHL teams with proven WebView deployment and comprehensive fan engagement ecosystem
+            Enterprise-grade platform for professional teams and leagues with flexible deployment and complete first-party data control.
           </p>
         </div>
 
         {/* Architecture Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {architectureFeatures.map((feature, index) => (
             <div
               key={index}
@@ -58,4 +53,4 @@ const PlatformArchitecture: React.FC = () => {
   );
 };
 
-export default PlatformArchitecture; 
+export default PlatformArchitecture;

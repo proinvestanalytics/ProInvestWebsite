@@ -24,7 +24,7 @@ const CTASection: React.FC = () => {
               Experience the Platform
             </h2>
             <p className="text-xl mb-12 leading-relaxed opacity-90">
-            Request access to OffPost to experience our integrated platform through proven WebView technology. See how the complete ecosystem works for NHL team deployment and co-development opportunities.
+            Request access to OffPost to experience the integrated ecosystem with our proven deployment models. See it running as a full standalone app or embedded via WebView, and explore co-development options.
             </p>
 
             {/* CTA Buttons */}
@@ -46,7 +46,7 @@ const CTASection: React.FC = () => {
             </div>
 
             <p className="text-sm mt-8 opacity-75">
-              NextAI-validated • Enterprise Platform • Co-development Opportunities • January 2026 Pilot Timeline
+            Dual-accelerator validated • Enterprise platform • Full app or WebView • Pilot timeline: late 2025
             </p>
           </div>
         </div>

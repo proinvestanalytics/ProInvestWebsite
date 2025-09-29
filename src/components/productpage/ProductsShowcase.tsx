@@ -30,32 +30,31 @@ const ProductsShowcase: React.FC = () => {
   const [sscModalOpen, setSscModalOpen] = useState(false);
   const products: Product[] = [
     {
-      id: 'ogc',
-      icon: '🎮',
-      title: 'One-Game Contest',
-      subtitle: 'Real-Time Skill-Based Gaming',
+      id: 'fullstack',
+      icon: '📱',
+      title: 'Full-Stack League & Team Apps',
+      subtitle: 'Complete Mobile Experience',
       status: 'complete',
-      statusText: '✓ 85% Complete - Pilot Ready',
-      description: 'Interactive skill-based game where fans manage 3-player lineups during live NHL games. Features complete digital sponsor asset catalog with six integrated activation types woven seamlessly into gameplay. Creates entirely new revenue streams through strategic sponsor integration at optimal engagement moments.',
+      statusText: 'Built & Demo-Ready',
+      description: 'Deliver a complete mobile experience; league hub + team views with your branding, SSO, and governance. OGC and SSC run as native screens; ProInsight provides administration and reporting.',
       features: [
-        { icon: '⚡', text: 'AI performance scoring engine (demo ready)', status: 'demo' },
-        { icon: '🔄', text: 'Unlimited player swaps during live games', status: 'ready' },
-        { icon: '🏆', text: 'Real-time leaderboards and competition', status: 'ready' },
-        { icon: '💰', text: 'Complete digital sponsor asset catalog integration', status: 'ready' },
-        { icon: '📱', text: 'WebView integration - proven via TestFlight', status: 'ready' },
-        { icon: '🎨', text: 'Enhanced UX/UI design and user experience', status: 'development' }
+        { icon: '🎨', text: 'White-label UI/UX with multi-team theming', status: 'ready' },
+        { icon: '🔐', text: 'Identity & SSO with role-based access', status: 'ready' },
+        { icon: '🧭', text: 'League ↔ team navigation architecture', status: 'ready' },
+        { icon: '📰', text: 'Content feeds, notifications, deep links', status: 'ready' },
+        { icon: '🔗', text: 'WebView hosts for OGC / SSC', status: 'ready' },
+        { icon: '📊', text: 'First-party fan ID capture (flows into ProInsight)', status: 'ready' }
       ],
       techSpecs: {
-        title: 'Technical Capabilities',
+        title: 'Deployment',
         items: [
-          'Cross-platform deployment ready',
-          'Enterprise-grade architecture',
-          'Real-time data processing',
-          '2-3 week customization timeline'
+          'Full-stack app (we ship the app), or',
+          'In-app embedding (WebView inside your current app)',
+          'Pilot branding/SSO: ~2–3 weeks'
         ],
         type: 'complete'
       },
-      imageUrl: '/OGCActionShot.png'
+      imageUrl: '/appShowcase.png'
     },
     {
       id: 'ssp',
@@ -63,27 +62,54 @@ const ProductsShowcase: React.FC = () => {
       title: 'Seventh Skater Club',
       subtitle: 'Lifetime Loyalty Ecosystem',
       status: 'complete',
-      statusText: '✓ 95% Complete - Pilot Ready',
-      description: 'Multi-generational loyalty program where fans progress through 9 tiers from Prospect to Legend. Features family accounts with inheritance, achievement badges, premium subscriptions, and lifetime engagement across generations. Blockchain-powered infrastructure for secure point management and transferability.',
+      statusText: '95% Complete - Pilot Ready',
+      description: 'Multi-generational loyalty program where fans progress through nine tiers from Prospect to Legend. Dual-point system (Status + Spendable) powers both long-term career progression and real-world rewards. Fully operational in OffPost demo.',
       features: [
-        { icon: '🔄', text: 'Dual-point architecture system', status: 'ready' },
-        { icon: '👨‍👩‍👧‍👦', text: 'Multi-generational family accounts', status: 'development' },
-        { icon: '🏅', text: 'Achievement badges and progression tiers', status: 'ready' },
-        { icon: '⛓️', text: 'Blockchain-powered loyalty infrastructure', status: 'development' },
-        { icon: '🎮', text: 'Integrated with OGC gameplay rewards', status: 'ready' },
-        { icon: '🎨', text: 'Enhanced UX/UI design and user experience', status: 'development' }
+        { icon: '🔄', text: 'Dual-point architecture: Status + Spendable', status: 'ready' },
+        { icon: '🏅', text: 'Nine-tier career journey with automatic badge unlocks', status: 'ready' },
+        { icon: '🎁', text: 'Rewards marketplace: merchandise, experiences, perks', status: 'ready' },
+        { icon: '🎮', text: 'OGC integration: points credited directly from contests', status: 'ready' },
+        { icon: '💎', text: 'Premium subscriptions + family account framework', status: 'ready' }
       ],
       techSpecs: {
-        title: 'Development Achievements',
+        title: 'Development roadmap',
         items: [
-          '95% platform completion in 3 months',
-          'NextAI Cohort 8 validation',
-          'Multi-tier loyalty system operational',
-          'Family account architecture complete'
+          'Multi-generational accounts (inheritance/sharing)',
+          'Blockchain ledger for secure, cross-team portability',
+          'Enhanced UX/UI refinements'
         ],
         type: 'complete'
       },
       imageUrl: '/SSPActionShot.png'
+    },
+    {
+      id: 'ogc',
+      icon: '🎮',
+      title: 'One-Game Contest',
+      subtitle: 'Real-Time Skill-Based Gaming',
+      status: 'development',
+      statusText: '70% Complete',
+      description: 'Interactive skill-based game where fans manage 3-player lineups during live NHL games. Features complete digital sponsor asset catalog with six integrated activation types woven seamlessly into gameplay. Creates entirely new revenue streams through strategic sponsor integration at optimal engagement moments.',
+      features: [
+        { icon: '⚡', text: 'Real-time UI with lineup manager & leaderboards (rules-based/manual scoring demo)', status: 'ready' },
+        { icon: '🔄', text: 'Unlimited in-game swaps (configurable)', status: 'ready' },
+        { icon: '🏆', text: 'Loyalty linkage: automatic point crediting into SSC', status: 'ready' },
+        { icon: '📱', text: 'WebView embedding proven in OffPost demo', status: 'ready' },
+        { icon: '💰', text: 'Full sponsor asset catalog (six activation types)', status: 'development' },
+        { icon: '⚙️', text: 'Team customization via ProInsight', status: 'development' },
+        { icon: '📊', text: 'Engagement & ROI analytics', status: 'development' }
+      ],
+      techSpecs: {
+        title: 'Technical',
+        items: [
+          'Automated scoring via computer vision',
+          'Real-time WebSockets',
+          'Cross-platform',
+          '2–3-week branding + SSO once pilot scope is set'
+        ],
+        type: 'development'
+      },
+      imageUrl: '/OGCActionShot.png'
     },
     {
       id: 'proinsight',
@@ -95,9 +121,9 @@ const ProductsShowcase: React.FC = () => {
       description: 'Complete ecosystem management platform controlling OGC contests, Seventh Skater loyalty programs, and enterprise analytics. Teams set sponsor portal permissions while sponsors get self-service campaign tools and ROI tracking.',
       features: [
         { icon: '🎮', text: 'OGC contest creation and management', status: 'ready' },
-        { icon: '🏆', text: 'SSP loyalty program administration and rewards', status: 'ready' },
+        { icon: '🏆', text: 'SSC loyalty program administration and rewards', status: 'ready' },
         { icon: '🤝', text: 'Sponsor portal access with team-controlled permissions', status: 'ready' },
-        { icon: '📊', text: 'Sponsor campaign management and ROI tracking', status: 'ready' },
+        { icon: '📊', text: 'Basic data ingest & reporting', status: 'ready' },
         { icon: '💰', text: 'Revenue optimization and attribution modeling', status: 'development' },
         { icon: '🧠', text: 'Advanced AI predictive analytics and automation', status: 'development' }
       ],

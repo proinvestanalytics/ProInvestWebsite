@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trophy, Target, Zap, BadgeDollarSign, Database, HeartHandshake } from 'lucide-react';
+import { Trophy, Sparkles, Database, Heart } from 'lucide-react';
 
 const FanEngagement: React.FC = () => {
   return (
@@ -9,26 +9,26 @@ const FanEngagement: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-primary mb-6">
-                Transform Your Game Experience
+                Turn Every Moment Into Value
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Teams monetize fan engagement through real-time contests and lifetime loyalty programs. Generate new digital inventory while building deeper fan relationships that last decades.
+                Unify live-game and always-on engagement in one platform. Create brand-safe digital inventory, capture first-party data, and convert fan interactions across the season into measurable ROI.
               </p>
               <div className="space-y-6">
                 <Feature 
-                  icon={<BadgeDollarSign className="h-6 w-6 text-secondary" />}
-                  title="Revenue Generation"
-                  description="Create new sponsorship inventory through contextual activations, achievement badges, and premium features during live games."
+                  icon={<Sparkles className="h-6 w-6 text-secondary" />}
+                  title="New Sponsorship Inventory"
+                  description="Contextual activations, achievements, and premium features—during games and between them—create sellable moments at peak attention."
                 />
                 <Feature 
                   icon={<Database className="h-6 w-6 text-secondary" />}
-                  title="Fan Data Ownership"
-                  description="Capture valuable first-party fan data and behavior analytics through your own platform instead of losing it to external apps."
+                  title="First-Party Data Ownership"
+                  description="Capture and control fan identity and behavior across all touchpoints (app, contests, loyalty), without leakage to external apps."
                 />
                 <Feature 
-                  icon={<HeartHandshake className="h-6 w-6 text-secondary" />}
-                  title="Loyalty Monetization"
-                  description="Build lifetime fan relationships through career progression that drives premium subscriptions and repeat engagement."
+                  icon={<Heart className="h-6 w-6 text-secondary" />}
+                  title="Lifetime Loyalty & Subscriptions"
+                  description="Career-long progression and rewards drive repeat use and recurring revenue across seasons, families, and generations."
                 />
               </div>
             </div>

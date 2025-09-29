@@ -4,20 +4,20 @@ import { CheckCircle, AlertCircle, Clock } from 'lucide-react';
 const DevelopmentStatus: React.FC = () => {
   const developmentItems = [
     {
-      title: "One-Game Contest (OGC)",
-      description: "Real-time skill-based gameplay with complete UI/UX, player management, scoring display, and team integration ready for deployment.",
-      status: "complete",
-      progress: 95,
-      icon: "🎮",
-      statusText: "COMPLETE"
-    },
-    {
-      title: "Seventh Skater Loyalty",
+      title: "Seventh Skater Club",
       description: "Multi-generational loyalty system with progression tiers, family accounts, badge achievements, and premium subscription architecture.",
       status: "complete",
       progress: 85,
       icon: "🏆",
       statusText: "COMPLETE"
+    },
+    {
+      title: "One-Game Contest (OGC)",
+      description: "Real-time skill-based gameplay with complete UI/UX, player management, scoring display, and team integration ready for deployment.",
+      status: "development",
+      progress: 70,
+      icon: "🎮",
+      statusText: "IN DEVELOPMENT"
     },
     {
       title: "ProInsight Analytics Suite",
@@ -34,14 +34,6 @@ const DevelopmentStatus: React.FC = () => {
       progress: 100,
       icon: "📱",
       statusText: "PROVEN"
-    },
-    {
-      title: "Hyperion AI System",
-      description: "Computer vision and automated scoring system for real-time player performance evaluation. Co-development partnership required for full implementation.",
-      status: "development",
-      progress: 20,
-      icon: "🤖",
-      statusText: "IN DEVELOPMENT"
     },
     {
       title: "Production Infrastructure",
@@ -95,18 +87,18 @@ const DevelopmentStatus: React.FC = () => {
             Platform Progress
           </h2>
           <p className="text-xl text-[#10605A] max-w-3xl mx-auto leading-relaxed">
-            Complete enterprise platform with proven WebView integration. AI systems and workflows in active development with co-development partners for full production deployment.
+          Core ecosystem is built and demo-ready, with proven deployment and active development toward production.
           </p>
         </div>
 
         {/* Development Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {developmentItems.map((item, index) => {
             const styles = getStatusStyles(item.status);
             return (
               <div
                 key={index}
-                className={`bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 ${styles.border}`}
+                className={`bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105 ${styles.border} w-full md:w-[calc(50%-1rem)] xl:w-[calc(33.333%-1.334rem)]`}
               >
                 {/* Status Badge */}
                 <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-semibold mb-4 ${styles.badge}`}>
@@ -145,7 +137,7 @@ const DevelopmentStatus: React.FC = () => {
                    item.status === 'proven' ? 'Integration Model Proven' :
                    item.status === 'development' && item.title.includes('Hyperion') ? '4-5 Months Development Timeline' :
                    item.status === 'development' && item.title.includes('ProInsight Analytics Suite') ? 'Core Platform Ready - AI Development Required' :
-                   item.status === 'development' ? '4-5 Months Development Timeline' :
+                   item.status === 'development' ? '3-4 Months Development Timeline' :
                    '3-4 Months Parallel Development'}
                 </p>
               </div>
@@ -157,4 +149,4 @@ const DevelopmentStatus: React.FC = () => {
   );
 };
 
-export default DevelopmentStatus; 
+export default DevelopmentStatus;

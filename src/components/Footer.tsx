@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <Logo />
-            <p className="mt-4 text-white/80 max-w-md">
-              ProInvest connects hockey fans with their favorite players through innovative technology and immersive experiences.
+            <p className="mt-4 text-white/80 max-w-lg">
+            ProInvest builds and powers team apps to transform fan attention into lasting loyalty and measurable sponsor revenue
             </p>
           </div>
           

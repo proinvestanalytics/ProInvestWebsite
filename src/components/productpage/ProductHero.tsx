@@ -31,7 +31,7 @@ const ProductHero: React.FC = () => {
 
           {/* Subtitle */}
           <p className="text-xl text-[#F7F2F0] leading-relaxed">
-            Complete ecosystem enabling NHL teams to own their fan engagement during live games and build lifetime loyalty through integrated gaming, rewards, and analytics
+          Complete fan engagement infrastructure for professional sports. Build league and team apps powered by real-time contests (OGC), lifetime loyalty (SSC), and first-party intelligence (ProInsight). Deploy as a full app or embed modules via WebView.
           </p>
         </div>
       </div>
