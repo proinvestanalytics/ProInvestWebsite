@@ -33,7 +33,7 @@ const About = () => {
 
             {/* Subtitle */}
             <p className="text-xl text-[#F7F2F0] leading-relaxed">
-              Meet the team behind ProInvest's innovative hockey technology solutions, combining deep sports expertise with cutting-edge AI development to transform the fan experience.
+              We build technology for every level of the game. From youth teams managing their seasons to professional leagues engaging millions of fans—we're creating the complete sports technology ecosystem.
             </p>
           </div>
         </div>
@@ -46,31 +46,44 @@ const About = () => {
             <h2 className="text-4xl font-bold text-primary text-center mb-8">Our Mission</h2>
             <div className="bg-gray-50 shadow-lg rounded-lg p-8">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              We transform passive spectators into active participants during live games and throughout the season. By building complete team applications with real-time contests and lifetime loyalty built in, we capture fan attention during commercial breaks, game pauses, and year-round moments, converting that engagement into measurable value teams control.
+                We believe great sports technology should serve every level of the game — from the youth coach juggling practice schedules to the professional team engaging millions of fans on game night.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Through our integrated platform, we:
+                That's why we're building two products:
+              </p>
+              <ul className="space-y-4 mb-6">
+                <li className="flex items-start">
+                  <span className="text-secondary font-bold mr-2 text-lg">•</span>
+                  <span className="text-lg"><strong>TeamOps</strong> — Operations platform for youth and amateur teams. Scheduling, communication, compliance, player safety, and much more all in one place.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary font-bold mr-2 text-lg">•</span>
+                  <span className="text-lg"><strong>ProInvest Ecosystem</strong> — Complete fan engagement infrastructure for professional leagues. Full-stack team apps, in-app entertainment, Seventh Skater Club for lifetime loyalty, and ProInsight for analytics.</span>
+                </li>
+              </ul>
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                Together, we:
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-2 text-lg">•</span>
-                  <span className="text-lg">Deepen fan engagement during commercial breaks and game pauses</span>
+                  <span className="text-lg">Empower youth teams with tools that simplify operations and prioritize safety</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-2 text-lg">•</span>
-                  <span className="text-lg">Create new revenue streams for teams through both sponsorships and direct fan monetization</span>
+                  <span className="text-lg">Give professional teams new ways to engage and monetize their fanbase</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-2 text-lg">•</span>
-                  <span className="text-lg">Deliver actionable first-party data for teams and partners</span>
+                  <span className="text-lg">Build technology that scales from a single team to an entire league</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-2 text-lg">•</span>
-                  <span className="text-lg">Strengthen the connection between fans and the game they love</span>
+                  <span className="text-lg">Create lifelong connections between people and the game</span>
                 </li>
               </ul>
               <p className="text-gray-700 text-lg leading-relaxed font-semibold">
-              We're not just building another app - we're revolutionizing how hockey is experienced by teams, sponsors, and fans.
+                From first skate to sold-out arenas — we're building the technology that powers the full sports journey.
               </p>
             </div>
           </div>

@@ -14,7 +14,8 @@ import {
   Apple,
   Wifi,
   FileText,
-  Bell
+  Bell,
+  AlertCircle
 } from 'lucide-react';
 
 const TeamOpsProduct: React.FC = () => {
@@ -98,92 +99,61 @@ const TeamOpsProduct: React.FC = () => {
         </div>
       </section>
 
-      {/* The Problem */}
+      {/* Problem & Solution Combined */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4 text-center">The Problem</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#17242C] text-center mb-6 leading-tight">
-              Sound familiar?
-            </h2>
-            <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-              Managing a team shouldn't feel like a second job. But somehow, it does.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <ProblemCard
-                title="Endless Texts & Calls"
-                description="Parents calling about ice time. Again."
-              />
-              <ProblemCard
-                title="Scattered Information"
-                description="Forms, rosters, contacts. All over the place."
-              />
-              <ProblemCard
-                title="No Single Source of Truth"
-                description="Which schedule is the real one?"
-              />
-              <ProblemCard
-                title="Manual Everything"
-                description="Tracking payments, suspensions, attendance. By hand."
-              />
-              <ProblemCard
-                title="Season-Long Firefighting"
-                description="Tryouts to playoffs. Chaos the whole way."
-              />
-              <ProblemCard
-                title="Zero Visibility"
-                description="What's the team status? Nobody knows."
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* The Solution */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">The Solution</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#17242C] mb-6">
-              One app. Everything connected.
+            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">Sound familiar?</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#17242C] mb-6 leading-tight">
+              Every problem has a solution
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              TeamOps replaces 5+ scattered tools with one platform. Information flows automatically. Everyone sees exactly what they need.
+              Managing a team shouldn't feel like a second job. TeamOps fixes that.
             </p>
           </div>
 
-          {/* Features grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <SolutionCard
-              icon={<ClipboardList className="w-6 h-6" />}
-              title="Full Season Control"
-              description="Tryouts to playoffs. Every phase organized in one place."
-            />
-            <SolutionCard
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <ProblemSolutionCard
+              problem="Endless Texts & Calls"
+              problemDesc="Parents calling about ice time. Again."
+              solution="Structured Communication"
+              solutionDesc="No more calls and texts. One channel. Clear process."
               icon={<Bell className="w-6 h-6" />}
-              title="Structured Communication"
-              description="No more calls and texts. One channel. Clear process."
             />
-            <SolutionCard
+            <ProblemSolutionCard
+              problem="Scattered Information"
+              problemDesc="Forms, rosters, contacts. All over the place."
+              solution="Smart Scheduling"
+              solutionDesc="Practices, games, events. Everything connected and tracked."
               icon={<Calendar className="w-6 h-6" />}
-              title="Smart Scheduling"
-              description="Practices, games, events. Everything connected and tracked."
             />
-            <SolutionCard
+            <ProblemSolutionCard
+              problem="No Single Source of Truth"
+              problemDesc="Which schedule is the real one?"
+              solution="Role-Based Access"
+              solutionDesc="Managers, coaches, trainers, parents, players. Each sees what they need."
               icon={<Users className="w-6 h-6" />}
-              title="Role-Based Access"
-              description="Managers, coaches, trainers, parents, players. Each sees what they need."
             />
-            <SolutionCard
-              icon={<Activity className="w-6 h-6" />}
-              title="Player Safety"
-              description="Protocols and tracking built in. Nothing falls through the cracks."
-            />
-            <SolutionCard
+            <ProblemSolutionCard
+              problem="Manual Everything"
+              problemDesc="Tracking payments, suspensions, attendance. By hand."
+              solution="Complete Oversight"
+              solutionDesc="Payments, compliance, status. Full visibility at a glance."
               icon={<Shield className="w-6 h-6" />}
-              title="Complete Oversight"
-              description="Payments, compliance, status. Full visibility at a glance."
+            />
+            <ProblemSolutionCard
+              problem="Season-Long Firefighting"
+              problemDesc="Tryouts to playoffs. Chaos the whole way."
+              solution="Full Season Control"
+              solutionDesc="Tryouts to playoffs. Every phase organized in one place."
+              icon={<ClipboardList className="w-6 h-6" />}
+            />
+            <ProblemSolutionCard
+              problem="Zero Visibility"
+              problemDesc="What's the team status? Nobody knows."
+              solution="Player Safety"
+              solutionDesc="Protocols and tracking built in. Nothing falls through the cracks."
+              icon={<Activity className="w-6 h-6" />}
             />
           </div>
         </div>
@@ -303,28 +273,7 @@ const TeamOpsProduct: React.FC = () => {
         </div>
       </section>
 
-      {/* Sports Support */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">Multi-Sport</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#17242C] mb-6">
-              Built for hockey. Expanding to more sports.
-            </h2>
-            <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-              Core features—scheduling, rosters, attendance, payments, communication—work for any team sport.
-              Sport-specific compliance modules are added per sport.
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-4">
-              <SportPill sport="Hockey" available />
-              <SportPill sport="More sports" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Works Everywhere */}
+      {/* Built for Trust + Multi-Sport */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
@@ -355,18 +304,10 @@ const TeamOpsProduct: React.FC = () => {
             {/* Compliance badges */}
             <div className="bg-gray-50 rounded-2xl p-8">
               <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4 text-center">Compliance & Standards</p>
-              <div className="flex flex-wrap justify-center gap-3">
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">HIPAA</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">GDPR</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">COPPA</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">SOC 2</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">NIST CSF</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">ISO 27017</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">ISO 27018</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">PIPEDA</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">CASL</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">OWASP Top 10</span>
-                <span className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700">MASVS</span>
+              <div className="flex justify-center gap-3 overflow-x-auto">
+                {['HIPAA', 'GDPR', 'COPPA', 'SOC 2', 'NIST CSF', 'ISO 27017', 'ISO 27018', 'PIPEDA', 'CASL', 'OWASP Top 10', 'MASVS'].map((standard) => (
+                  <span key={standard} className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700 whitespace-nowrap flex-shrink-0">{standard}</span>
+                ))}
               </div>
             </div>
           </div>
@@ -382,7 +323,7 @@ const TeamOpsProduct: React.FC = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-[#17242C] mb-6">
                 Be part of building something great
               </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              <p className="text-xl text-gray-600 mx-auto whitespace-nowrap">
                 We're working with teams like yours to make TeamOps the best it can be.
               </p>
             </div>
@@ -450,6 +391,18 @@ const TeamOpsProduct: React.FC = () => {
             <p className="text-sm text-gray-500 mt-6">
               Limited beta spots available. Get in before your season starts.
             </p>
+
+            {/* Multi-Sport */}
+            <div className="mt-16 pt-12 border-t border-white/10">
+              <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">Multi-Sport</p>
+              <p className="text-gray-400 mb-6">
+                Built for hockey. Expanding to more sports.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <SportPill sport="Hockey" available />
+                <SportPill sport="More sports" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -457,28 +410,39 @@ const TeamOpsProduct: React.FC = () => {
   );
 };
 
-// Problem Card
-const ProblemCard: React.FC<{ title: string; description: string }> = ({ title, description }) => (
-  <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-red-200 hover:bg-red-50/30 transition-all duration-300">
-    <h3 className="text-xl font-bold text-[#17242C] mb-3">{title}</h3>
-    <p className="text-gray-600">{description}</p>
-  </div>
-);
-
-// Solution Card
-interface SolutionCardProps {
+// Problem + Solution Card
+interface ProblemSolutionCardProps {
+  problem: string;
+  problemDesc: string;
+  solution: string;
+  solutionDesc: string;
   icon: React.ReactNode;
-  title: string;
-  description: string;
 }
 
-const SolutionCard: React.FC<SolutionCardProps> = ({ icon, title, description }) => (
-  <div className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-[#00B88A] hover:shadow-xl hover:shadow-[#00B88A]/5 transition-all duration-500">
-    <div className="w-12 h-12 bg-[#00B88A]/10 rounded-xl flex items-center justify-center text-[#00B88A] mb-6 group-hover:bg-[#00B88A] group-hover:text-white transition-all duration-500">
-      {icon}
+const ProblemSolutionCard: React.FC<ProblemSolutionCardProps> = ({ problem, problemDesc, solution, solutionDesc, icon }) => (
+  <div className="group bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-[#00B88A] hover:shadow-lg transition-all duration-300">
+    {/* Problem */}
+    <div className="mb-6 pb-6 border-b border-gray-200">
+      <div className="flex items-start gap-3">
+        <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center text-red-500 flex-shrink-0">
+          <AlertCircle className="w-5 h-5" />
+        </div>
+        <div>
+          <h3 className="text-lg font-bold text-[#17242C] mb-1">{problem}</h3>
+          <p className="text-gray-500 text-sm">{problemDesc}</p>
+        </div>
+      </div>
     </div>
-    <h3 className="text-xl font-bold text-[#17242C] mb-3">{title}</h3>
-    <p className="text-gray-600 leading-relaxed">{description}</p>
+    {/* Solution */}
+    <div className="flex items-start gap-3">
+      <div className="w-10 h-10 bg-[#00B88A]/10 rounded-lg flex items-center justify-center text-[#00B88A] flex-shrink-0">
+        {icon}
+      </div>
+      <div>
+        <h4 className="text-lg font-bold text-[#17242C] mb-1">{solution}</h4>
+        <p className="text-gray-600 text-sm">{solutionDesc}</p>
+      </div>
+    </div>
   </div>
 );
 

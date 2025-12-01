@@ -108,99 +108,22 @@ const Home: React.FC<HomeProps> = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg text-[#00B88A] font-semibold mb-4">Sound familiar?</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#17242C] mb-8 leading-tight">
-              Your roster's in Excel. Schedule's in Google Calendar.
-              Medical forms are in a binder somewhere.
-              And payments? <span className="text-gray-400">Don't ask.</span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#17242C] mb-8 leading-relaxed">
+              Another parent call about ice time.<br /><br />
+              Another suspension to track manually.<br /><br />
+              Another practice planned from scratch.<br /><br />
+              Another budget reconciled by hand.<br /><br />
+              <span className="text-gray-400">Chaos for everything else.</span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Managing a youth sports team shouldn't require 6 different apps
-              and a group chat that never stops buzzing.
+              Managing a team shouldn't mean juggling a dozen tools and a group chat that never stops.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Two Platforms Section */}
-      <section className="py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">Our Platforms</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#17242C] mb-4">
-              Software for every level of sport
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              From youth rec leagues to professional franchises.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* TeamOps Card - Primary */}
-            <Link
-              to="/products/teamops"
-              className="group relative bg-white rounded-3xl p-10 border border-gray-200 hover:border-[#00B88A] transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B88A]/10 overflow-hidden"
-            >
-              {/* Badge */}
-              <div className="absolute top-6 right-6">
-                <span className="inline-flex items-center gap-1.5 bg-[#00B88A]/10 text-[#00B88A] px-3 py-1 rounded-full text-xs font-semibold">
-                  <span className="w-1.5 h-1.5 bg-[#00B88A] rounded-full animate-pulse" />
-                  Beta Available
-                </span>
-              </div>
-
-              <div className="w-16 h-16 bg-gradient-to-br from-[#00B88A] to-[#008C8D] rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform duration-500">
-                <Users className="w-8 h-8" />
-              </div>
-
-              <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-2">
-                For Youth & Amateur Teams
-              </p>
-              <h3 className="text-3xl font-bold text-[#17242C] mb-4">TeamOps</h3>
-              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Everything your team needs in one app. Scheduling, rosters, medical compliance, payments, and communication—built for managers, coaches, trainers, parents, and players.
-              </p>
-
-              <div className="flex items-center text-[#00B88A] font-semibold group-hover:gap-4 gap-2 transition-all duration-300">
-                Learn more
-                <ArrowRight className="w-5 h-5" />
-              </div>
-            </Link>
-
-            {/* ProInvest Ecosystem Card - Secondary */}
-            <Link
-              to="/products/proinvest-ecosystem"
-              className="group relative bg-white rounded-3xl p-10 border border-gray-200 hover:border-[#00B88A] transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B88A]/10 overflow-hidden"
-            >
-              {/* Badge */}
-              <div className="absolute top-6 right-6">
-                <span className="inline-flex items-center gap-1.5 bg-orange-500/10 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">
-                  In Development
-                </span>
-              </div>
-
-              <div className="w-16 h-16 bg-gradient-to-br from-[#00B88A] to-[#008C8D] rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform duration-500">
-                <Trophy className="w-8 h-8" />
-              </div>
-
-              <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-2">
-                For Professional Organizations
-              </p>
-              <h3 className="text-3xl font-bold text-[#17242C] mb-4">ProInvest Ecosystem</h3>
-              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Enterprise fan engagement infrastructure. White-label mobile apps, real-time contests, lifetime loyalty programs, and first-party analytics for pro sports teams.
-              </p>
-
-              <div className="flex items-center text-[#00B88A] font-semibold group-hover:gap-4 gap-2 transition-all duration-300">
-                Learn more
-                <ArrowRight className="w-5 h-5" />
-              </div>
-            </Link>
           </div>
         </div>
       </section>
 
       {/* TeamOps Feature Highlight */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
@@ -237,8 +160,8 @@ const Home: React.FC<HomeProps> = () => {
               />
               <FeatureCard
                 icon={<Smartphone className="w-6 h-6" />}
-                title="Works offline"
-                description="At an arena with no signal? Injury reports sync when you're back online."
+                title="Built-in ticketing"
+                description="Parents submit issues in one place. No more calls, texts, or emails flooding your phone."
               />
               <FeatureCard
                 icon={<CheckCircle className="w-6 h-6" />}
@@ -257,6 +180,84 @@ const Home: React.FC<HomeProps> = () => {
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Two Platforms Section */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">Our Platforms</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#17242C] mb-4">
+              Software for every level of sport
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              From youth rec leagues to professional franchises.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* TeamOps Card - Primary */}
+            <Link
+              to="/products/teamops"
+              className="group relative bg-gray-50 rounded-3xl p-10 border border-gray-200 hover:border-[#00B88A] transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B88A]/10 overflow-hidden"
+            >
+              {/* Badge */}
+              <div className="absolute top-6 right-6">
+                <span className="inline-flex items-center gap-1.5 bg-[#00B88A]/10 text-[#00B88A] px-3 py-1 rounded-full text-xs font-semibold">
+                  <span className="w-1.5 h-1.5 bg-[#00B88A] rounded-full animate-pulse" />
+                  Beta Available
+                </span>
+              </div>
+
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00B88A] to-[#008C8D] rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform duration-500">
+                <Users className="w-8 h-8" />
+              </div>
+
+              <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-2">
+                For Youth & Amateur Teams
+              </p>
+              <h3 className="text-3xl font-bold text-[#17242C] mb-4">TeamOps</h3>
+              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+                Everything your team needs in one app. Scheduling, rosters, medical compliance, payments, and communication—built for managers, coaches, trainers, parents, and players.
+              </p>
+
+              <div className="flex items-center text-[#00B88A] font-semibold group-hover:gap-4 gap-2 transition-all duration-300">
+                Learn more
+                <ArrowRight className="w-5 h-5" />
+              </div>
+            </Link>
+
+            {/* ProInvest Ecosystem Card - Secondary */}
+            <Link
+              to="/products/proinvest-ecosystem"
+              className="group relative bg-gray-50 rounded-3xl p-10 border border-gray-200 hover:border-[#00B88A] transition-all duration-500 hover:shadow-2xl hover:shadow-[#00B88A]/10 overflow-hidden"
+            >
+              {/* Badge */}
+              <div className="absolute top-6 right-6">
+                <span className="inline-flex items-center gap-1.5 bg-orange-500/10 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">
+                  In Development
+                </span>
+              </div>
+
+              <div className="w-16 h-16 bg-gradient-to-br from-[#00B88A] to-[#008C8D] rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform duration-500">
+                <Trophy className="w-8 h-8" />
+              </div>
+
+              <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-2">
+                For Professional Organizations
+              </p>
+              <h3 className="text-3xl font-bold text-[#17242C] mb-4">ProInvest Ecosystem</h3>
+              <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+                Enterprise fan engagement infrastructure. White-label mobile apps, real-time contests, lifetime loyalty programs, and first-party analytics for pro sports teams.
+              </p>
+
+              <div className="flex items-center text-[#00B88A] font-semibold group-hover:gap-4 gap-2 transition-all duration-300">
+                Learn more
+                <ArrowRight className="w-5 h-5" />
+              </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -296,11 +297,11 @@ const Home: React.FC<HomeProps> = () => {
                 </div>
                 <h3 className="text-xl font-bold text-[#17242C] mb-2">ZeroLabs Cohort 6</h3>
                 <p className="text-gray-600 mb-4">
-                  Innovation Launch Pad focused on commercialization and market entry. Currently in program.
+                  Innovation Launch Pad focused on commercialization and market entry. Completed October 2025.
                 </p>
                 <div className="flex items-center gap-2">
-                  <span className="px-3 py-1 bg-orange-500/10 text-orange-600 rounded-full text-sm font-semibold">
-                    In Progress
+                  <span className="px-3 py-1 bg-[#00B88A]/10 text-[#00B88A] rounded-full text-sm font-semibold">
+                    Completed
                   </span>
                 </div>
               </div>
@@ -319,7 +320,7 @@ const Home: React.FC<HomeProps> = () => {
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
               We've spent years managing youth hockey teams—chasing RSVPs, tracking injuries on paper,
-              and building lineup spreadsheets at midnight. We built TeamOps because we needed it ourselves.
+              and scrambling over practice plans and game rosters. We built TeamOps because we needed it ourselves.
             </p>
             <Link
               to="/about"

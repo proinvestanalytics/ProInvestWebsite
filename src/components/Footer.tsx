@@ -10,8 +10,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <Logo />
             <p className="mt-4 text-white/80 max-w-lg">
-            ProInvest builds and powers team apps to transform fan attention into lasting loyalty and measurable sponsor revenue
-            </p>
+            ProInvest builds the technology platforms for modern sports — from youth teams to professional leagues.            </p>
           </div>
           
           <div>
