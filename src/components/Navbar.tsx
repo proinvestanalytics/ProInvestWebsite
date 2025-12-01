@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Menu, ChevronDown, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Logo from './Logo';
+import LanguageToggle from './LanguageToggle';
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,6 +17,7 @@ const Navbar: React.FC = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <NavLinks />
+            <LanguageToggle />
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -33,6 +36,9 @@ const Navbar: React.FC = () => {
           <div className="md:hidden bg-white mt-4 p-4 rounded-lg shadow-md">
             <div className="flex flex-col space-y-4">
               <MobileNavLinks onClose={() => setIsMobileMenuOpen(false)} />
+              <div className="pt-4 border-t border-gray-100">
+                <LanguageToggle isMobile />
+              </div>
             </div>
           </div>
         )}
@@ -43,6 +49,7 @@ const Navbar: React.FC = () => {
 
 const NavLinks: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const { t } = useTranslation('common');
 
   return (
     <>
@@ -56,7 +63,7 @@ const NavLinks: React.FC = () => {
           className="text-primary font-medium hover:text-secondary transition-colors duration-300 flex items-center gap-1 py-2"
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         >
-          Our Products
+          {t('nav.ourProducts')}
           <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} />
         </button>
 
@@ -69,16 +76,16 @@ const NavLinks: React.FC = () => {
                 onClick={() => setIsDropdownOpen(false)}
                 className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
               >
-                <div className="font-semibold text-primary">TeamOps</div>
-                <div className="text-sm text-gray-500">For youth & amateur teams</div>
+                <div className="font-semibold text-primary">{t('nav.teamops')}</div>
+                <div className="text-sm text-gray-500">{t('nav.teamopsDesc')}</div>
               </Link>
               <Link
                 to="/products/proinvest-ecosystem"
                 onClick={() => setIsDropdownOpen(false)}
                 className="block px-4 py-3 hover:bg-gray-50 transition-colors duration-200"
               >
-                <div className="font-semibold text-primary">ProInvest Ecosystem</div>
-                <div className="text-sm text-gray-500">For professional organizations</div>
+                <div className="font-semibold text-primary">{t('nav.proinvestEcosystem')}</div>
+                <div className="text-sm text-gray-500">{t('nav.proinvestEcosystemDesc')}</div>
               </Link>
             </div>
           </div>
@@ -89,13 +96,13 @@ const NavLinks: React.FC = () => {
         to="/about"
         className="text-primary font-medium hover:text-secondary transition-colors duration-300"
       >
-        About
+        {t('nav.about')}
       </Link>
       <Link
         to="/contact"
         className="text-primary font-medium hover:text-secondary transition-colors duration-300"
       >
-        Contact Us
+        {t('nav.contactUs')}
       </Link>
     </>
   );
@@ -107,6 +114,7 @@ interface MobileNavLinksProps {
 
 const MobileNavLinks: React.FC<MobileNavLinksProps> = ({ onClose }) => {
   const [isProductsExpanded, setIsProductsExpanded] = useState(false);
+  const { t } = useTranslation('common');
 
   return (
     <>
@@ -116,7 +124,7 @@ const MobileNavLinks: React.FC<MobileNavLinksProps> = ({ onClose }) => {
           onClick={() => setIsProductsExpanded(!isProductsExpanded)}
           className="w-full text-left text-primary font-medium hover:text-secondary transition-colors duration-300 flex items-center justify-between"
         >
-          Our Products
+          {t('nav.ourProducts')}
           <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isProductsExpanded ? 'rotate-180' : ''}`} />
         </button>
 
@@ -127,16 +135,16 @@ const MobileNavLinks: React.FC<MobileNavLinksProps> = ({ onClose }) => {
               onClick={onClose}
               className="block py-2 text-primary hover:text-secondary transition-colors duration-200"
             >
-              <div className="font-medium">TeamOps</div>
-              <div className="text-sm text-gray-500">For youth & amateur teams</div>
+              <div className="font-medium">{t('nav.teamops')}</div>
+              <div className="text-sm text-gray-500">{t('nav.teamopsDesc')}</div>
             </Link>
             <Link
               to="/products/proinvest-ecosystem"
               onClick={onClose}
               className="block py-2 text-primary hover:text-secondary transition-colors duration-200"
             >
-              <div className="font-medium">ProInvest Ecosystem</div>
-              <div className="text-sm text-gray-500">For professional organizations</div>
+              <div className="font-medium">{t('nav.proinvestEcosystem')}</div>
+              <div className="text-sm text-gray-500">{t('nav.proinvestEcosystemDesc')}</div>
             </Link>
           </div>
         )}
@@ -147,14 +155,14 @@ const MobileNavLinks: React.FC<MobileNavLinksProps> = ({ onClose }) => {
         onClick={onClose}
         className="text-primary font-medium hover:text-secondary transition-colors duration-300"
       >
-        About
+        {t('nav.about')}
       </Link>
       <Link
         to="/contact"
         onClick={onClose}
         className="text-primary font-medium hover:text-secondary transition-colors duration-300"
       >
-        Contact Us
+        {t('nav.contactUs')}
       </Link>
     </>
   );

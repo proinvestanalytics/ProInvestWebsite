@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "badge": "En bêta sur TestFlight",
+    "title": "Gérez votre équipe",
+    "titleHighlight": "comme un pro",
+    "subtitle": "La plateforme qui remplace vos tableurs, groupes de discussion et formulaires papier.",
+    "subtitleHighlight": "Une app pour toute votre organisation.",
+    "trustSignals": {
+      "freeDuringBeta": "Gratuit en bêta",
+      "iosAndroid": "iOS et Android",
+      "hipaaGdpr": "Conforme HIPAA/RGPD"
+    }
+  },
+  "problem": {
+    "eyebrow": "Ça vous dit quelque chose ?",
+    "iceTime": "Encore un appel pour le temps de glace.",
+    "suspension": "Encore une suspension à suivre.",
+    "practice": "Encore un entraînement à planifier.",
+    "budget": "Encore un budget à réconcilier.",
+    "chaos": "Le chaos pour le reste.",
+    "description": "Gérer une équipe ne devrait pas signifier jongler avec des outils et un groupe qui n'arrête jamais."
+  },
+  "features": {
+    "eyebrow": "TeamOps",
+    "title": "Enfin, une app qui fait tout",
+    "subtitle": "Arrêtez de jongler. Commencez à gérer.",
+    "scheduling": {
+      "title": "Horaire synchronisé",
+      "description": "Matchs, pratiques, événements. Tout le monde voit le même horaire. Confirmez en un clic."
+    },
+    "roster": {
+      "title": "Gestion d'alignement",
+      "description": "Profils joueurs, positions, numéros. Invitez les parents par lien."
+    },
+    "medical": {
+      "title": "Conformité médicale",
+      "description": "Rapports conformes HIPAA. Protocoles CRT5. Suivi retour au jeu. Formulaires Hockey Canada."
+    },
+    "attendance": {
+      "title": "Présences instantanées",
+      "description": "Fini les « qui vient ? ». Décompte en temps réel par événement."
+    },
+    "ticketing": {
+      "title": "Billetterie intégrée",
+      "description": "Les parents soumettent au même endroit. Fini les appels et textos."
+    },
+    "payments": {
+      "title": "Suivi des paiements",
+      "description": "Voyez qui a payé, qui doit. Sans tableur."
+    }
+  },
+  "platforms": {
+    "eyebrow": "Nos plateformes",
+    "title": "Logiciels pour tous les niveaux",
+    "subtitle": "Des ligues jeunesse aux franchises pro.",
+    "teamops": {
+      "badge": "Bêta dispo",
+      "eyebrow": "Pour équipes jeunesse et amateurs",
+      "title": "TeamOps",
+      "description": "Tout pour votre équipe en une app. Horaire, alignements, médical, paiements et communication — pour gestionnaires, coachs, soigneurs, parents et joueurs."
+    },
+    "proinvest": {
+      "badge": "En développement",
+      "eyebrow": "Pour organisations pro",
+      "title": "Écosystème ProInvest",
+      "description": "Infrastructure d'engagement des partisans. Apps mobiles, concours temps réel, fidélité à vie et analytique pour équipes pro."
+    }
+  },
+  "accelerators": {
+    "eyebrow": "Appuyés par",
+    "title": "Les meilleurs accélérateurs du Canada croient en nous",
+    "nextai": {
+      "title": "NextAI Cohorte 8",
+      "description": "Premier accélérateur IA au Canada. Programme complété, Demo Day sept. 2025.",
+      "status": "Complété"
+    },
+    "zerolabs": {
+      "title": "ZeroLabs Cohorte 6",
+      "description": "Tremplin d'innovation axé commercialisation. Complété oct. 2025.",
+      "status": "Complété"
+    }
+  },
+  "aboutTeaser": {
+    "eyebrow": "Qui nous sommes",
+    "title": "Par des coachs. Pour des coachs.",
+    "description": "Nous avons géré des équipes jeunesse — à courir après les confirmations, suivre les blessures sur papier. Nous avons créé TeamOps parce qu'on en avait besoin."
+  },
+  "finalCta": {
+    "badge": "Sur TestFlight",
+    "title": "Prêt à simplifier votre saison ?",
+    "description": "Rejoignez les équipes qui utilisent TeamOps. Gratuit en bêta."
+  }
+}

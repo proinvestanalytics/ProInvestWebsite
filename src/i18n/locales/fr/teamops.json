@@ -1,0 +1,179 @@
+{
+  "hero": {
+    "badge": "En bêta",
+    "tagline": "Du chaos au contrôle",
+    "subtitle": "Une app pour gestionnaires, coachs, soigneurs, parents et joueurs",
+    "description": "Remplacez tableurs, groupes de discussion et formulaires papier. Horaires, alignements, blessures, paiements — tout au même endroit.",
+    "trustSignals": {
+      "iosAndroid": "iOS et Android",
+      "freeDuringBeta": "Gratuit en bêta",
+      "builtForSecurity": "Sécurisé"
+    }
+  },
+  "problemSolution": {
+    "eyebrow": "Ça vous dit quelque chose ?",
+    "title": "Chaque problème a sa solution",
+    "subtitle": "Gérer une équipe ne devrait pas être un 2e emploi.",
+    "cards": {
+      "communication": {
+        "problem": "Textos et appels sans fin",
+        "problemDesc": "Parents qui appellent. Encore.",
+        "solution": "Communication structurée",
+        "solutionDesc": "Un seul canal. Un processus clair."
+      },
+      "scheduling": {
+        "problem": "Info éparpillée",
+        "problemDesc": "Formulaires, alignements. Partout.",
+        "solution": "Calendrier intelligent",
+        "solutionDesc": "Pratiques, matchs, événements. Tout connecté."
+      },
+      "singleSource": {
+        "problem": "Aucune source unique",
+        "problemDesc": "Quel horaire est le bon ?",
+        "solution": "Accès par rôle",
+        "solutionDesc": "Chacun voit ce dont il a besoin."
+      },
+      "manual": {
+        "problem": "Tout est manuel",
+        "problemDesc": "Paiements, suspensions. À la main.",
+        "solution": "Visibilité complète",
+        "solutionDesc": "Paiements, conformité. Vue d'ensemble."
+      },
+      "firefighting": {
+        "problem": "Mode pompier toute la saison",
+        "problemDesc": "Des essais aux séries. Chaos.",
+        "solution": "Contrôle de la saison",
+        "solutionDesc": "Chaque phase organisée."
+      },
+      "visibility": {
+        "problem": "Aucune visibilité",
+        "problemDesc": "Statut de l'équipe ? Inconnu.",
+        "solution": "Sécurité des joueurs",
+        "solutionDesc": "Protocoles intégrés. Rien n'échappe."
+      }
+    }
+  },
+  "roles": {
+    "eyebrow": "Cinq rôles",
+    "title": "Chacun voit ce dont il a besoin",
+    "subtitle": "Chaque rôle obtient une expérience personnalisée.",
+    "manager": {
+      "title": "Gestionnaire",
+      "subtitle": "L'admin",
+      "items": [
+        "Contrôle de l'alignement",
+        "Suivi budget et paiements",
+        "Tableau de conformité"
+      ]
+    },
+    "coach": {
+      "title": "Coach",
+      "subtitle": "Le stratège",
+      "items": [
+        "Formations et plans",
+        "Présences en direct",
+        "Disponibilité joueurs"
+      ]
+    },
+    "trainer": {
+      "title": "Soigneur",
+      "subtitle": "Le médical",
+      "items": [
+        "Rapports (hors ligne OK)",
+        "Suivi retour au jeu",
+        "Autorisations médicales"
+      ]
+    },
+    "parent": {
+      "title": "Parent",
+      "subtitle": "Le supporteur",
+      "items": [
+        "Profil médical enfant",
+        "Statut paiements/blessures",
+        "Confirmation présence"
+      ]
+    },
+    "player": {
+      "title": "Joueur",
+      "subtitle": "Le participant",
+      "items": [
+        "Horaire et formations",
+        "Plans d'entraînement",
+        "Chat équipe et règles"
+      ]
+    }
+  },
+  "safety": {
+    "eyebrow": "Sécurité",
+    "title": "Sécurité des joueurs, bien gérée",
+    "subtitle": "Protocoles clairs et documentation appropriée — pas de papier dans un classeur.",
+    "cards": {
+      "injuryReports": {
+        "title": "Rapports numériques",
+        "description": "Créez des rapports depuis le banc. Fonctionne hors ligne."
+      },
+      "recovery": {
+        "title": "Récupération structurée",
+        "description": "Protocoles de retour au jeu. Suivez les progrès."
+      },
+      "certification": {
+        "title": "Certification coachs",
+        "description": "Formation sécurité avant accès complet. Sans exception."
+      },
+      "auditTrail": {
+        "title": "Piste d'audit",
+        "description": "Chaque incident documenté. Tout est enregistré."
+      }
+    }
+  },
+  "trust": {
+    "eyebrow": "Fiabilité",
+    "title": "Conçu pour le monde réel",
+    "subtitle": "Arénas sans signal. Données sensibles. TeamOps gère tout.",
+    "nativeMobile": {
+      "title": "App mobile native",
+      "description": "iOS et Android. Rapide, réactive, naturelle."
+    },
+    "secureByDefault": {
+      "title": "Sécurisé par défaut",
+      "description": "Chiffrement. Accès par rôle. Données protégées."
+    },
+    "complianceTitle": "Conformité"
+  },
+  "beta": {
+    "eyebrow": "Rejoignez la bêta",
+    "title": "Participez à créer quelque chose de grand",
+    "subtitle": "On travaille avec des équipes comme la vôtre.",
+    "cards": {
+      "free": {
+        "title": "Gratuit en bêta",
+        "description": "Pas de carte requise. Toutes les fonctions gratuites."
+      },
+      "directInput": {
+        "title": "Contribution directe",
+        "description": "Vos commentaires façonnent le produit."
+      },
+      "prioritySupport": {
+        "title": "Soutien prioritaire",
+        "description": "Accès direct à notre équipe."
+      },
+      "earlyPricing": {
+        "title": "Prix early adopter",
+        "description": "Prix spécial au lancement pour les testeurs."
+      }
+    }
+  },
+  "finalCta": {
+    "badge": "Sur TestFlight",
+    "title": "Prêt pour une meilleure façon ?",
+    "subtitle": "Arrêtez de jongler avec tableurs et groupes. Passez à TeamOps.",
+    "limitedSpots": "Places limitées. Inscrivez-vous avant votre saison."
+  },
+  "multiSport": {
+    "eyebrow": "Multi-sport",
+    "description": "Conçu pour le hockey. Expansion prévue.",
+    "hockey": "Hockey",
+    "moreSports": "Autres sports",
+    "comingSoon": "Bientôt"
+  }
+}

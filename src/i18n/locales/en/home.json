@@ -1,0 +1,93 @@
+{
+  "hero": {
+    "badge": "Now in Beta on TestFlight",
+    "title": "Run your sports team",
+    "titleHighlight": "like a pro",
+    "subtitle": "The team management platform that replaces your spreadsheets, group chats, and paper forms.",
+    "subtitleHighlight": "One app for your entire organization.",
+    "trustSignals": {
+      "freeDuringBeta": "Free during beta",
+      "iosAndroid": "iOS & Android",
+      "hipaaGdpr": "HIPAA & GDPR compliant"
+    }
+  },
+  "problem": {
+    "eyebrow": "Sound familiar?",
+    "iceTime": "Another parent call about ice time.",
+    "suspension": "Another suspension to track manually.",
+    "practice": "Another practice planned from scratch.",
+    "budget": "Another budget reconciled by hand.",
+    "chaos": "Chaos for everything else.",
+    "description": "Managing a team shouldn't mean juggling a dozen tools and a group chat that never stops."
+  },
+  "features": {
+    "eyebrow": "TeamOps",
+    "title": "Finally, one app that does it all",
+    "subtitle": "Stop juggling tools. Start running your team.",
+    "scheduling": {
+      "title": "Scheduling that syncs",
+      "description": "Games, practices, and events. Everyone sees the same schedule. RSVP with one tap."
+    },
+    "roster": {
+      "title": "Roster management",
+      "description": "Player profiles, positions, jersey numbers. Invite parents with a link."
+    },
+    "medical": {
+      "title": "Medical compliance",
+      "description": "HIPAA-compliant injury reports. CRT5 concussion protocols. Return-to-play tracking. Hockey Canada forms built-in."
+    },
+    "attendance": {
+      "title": "Instant attendance",
+      "description": "No more 'who's coming?' group texts. Real-time headcounts for every event."
+    },
+    "ticketing": {
+      "title": "Built-in ticketing",
+      "description": "Parents submit issues in one place. No more calls, texts, or emails flooding your phone."
+    },
+    "payments": {
+      "title": "Payment tracking",
+      "description": "See who's paid, who hasn't, and how much is outstanding. No spreadsheets."
+    }
+  },
+  "platforms": {
+    "eyebrow": "Our Platforms",
+    "title": "Software for every level of sport",
+    "subtitle": "From youth rec leagues to professional franchises.",
+    "teamops": {
+      "badge": "Beta Available",
+      "eyebrow": "For Youth & Amateur Teams",
+      "title": "TeamOps",
+      "description": "Everything your team needs in one app. Scheduling, rosters, medical compliance, payments, and communication—built for managers, coaches, trainers, parents, and players."
+    },
+    "proinvest": {
+      "badge": "In Development",
+      "eyebrow": "For Professional Organizations",
+      "title": "ProInvest Ecosystem",
+      "description": "Enterprise fan engagement infrastructure. White-label mobile apps, real-time contests, lifetime loyalty programs, and first-party analytics for pro sports teams."
+    }
+  },
+  "accelerators": {
+    "eyebrow": "Backed By",
+    "title": "Canada's top accelerators believe in what we're building",
+    "nextai": {
+      "title": "NextAI Cohort 8",
+      "description": "Canada's premier AI accelerator. We completed the program and presented at Demo Day September 2025.",
+      "status": "Completed"
+    },
+    "zerolabs": {
+      "title": "ZeroLabs Cohort 6",
+      "description": "Innovation Launch Pad focused on commercialization and market entry. Completed October 2025.",
+      "status": "Completed"
+    }
+  },
+  "aboutTeaser": {
+    "eyebrow": "Who We Are",
+    "title": "Built by coaches. For coaches.",
+    "description": "We've spent years managing youth hockey teams—chasing RSVPs, tracking injuries on paper, and scrambling over practice plans and game rosters. We built TeamOps because we needed it ourselves."
+  },
+  "finalCta": {
+    "badge": "Available on TestFlight",
+    "title": "Ready to simplify your season?",
+    "description": "Join teams already using TeamOps to run smoother seasons. Free during beta."
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   ArrowRight,
   Users,
@@ -18,6 +19,9 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = () => {
+  const { t } = useTranslation('home');
+  const { t: tc } = useTranslation('common');
+
   return (
     <>
       {/* Hero Section - Clean, confident, aspirational */}
@@ -41,22 +45,22 @@ const Home: React.FC<HomeProps> = () => {
             {/* Eyebrow */}
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full text-sm font-medium mb-8">
               <span className="w-2 h-2 bg-[#00B88A] rounded-full animate-pulse" />
-              Now in Beta on TestFlight
+              {t('hero.badge')}
             </div>
 
             {/* Main headline - outcome focused */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-8 leading-[1.1] tracking-tight">
-              Run your sports team
+              {t('hero.title')}
               <br />
               <span className="bg-gradient-to-r from-[#00B88A] via-[#00D4A0] to-[#008C8D] bg-clip-text text-transparent">
-                like a pro
+                {t('hero.titleHighlight')}
               </span>
             </h1>
 
             {/* Subheadline - specific value prop */}
             <p className="text-xl sm:text-2xl text-gray-300 leading-relaxed mb-12 max-w-2xl mx-auto font-light">
-              The team management platform that replaces your spreadsheets, group chats, and paper forms.
-              <span className="text-white font-normal"> One app for your entire organization.</span>
+              {t('hero.subtitle')}
+              <span className="text-white font-normal"> {t('hero.subtitleHighlight')}</span>
             </p>
 
             {/* CTA buttons */}
@@ -66,14 +70,14 @@ const Home: React.FC<HomeProps> = () => {
                 className="group inline-flex items-center justify-center px-8 py-4 bg-white text-[#17242C] font-semibold rounded-xl hover:bg-gray-100 transition-all duration-300 shadow-2xl shadow-white/20"
               >
                 <Apple className="w-5 h-5 mr-2" />
-                Join the Beta
+                {tc('buttons.joinBeta')}
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/products/teamops"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300"
               >
-                See how it works
+                {tc('buttons.seeHowItWorks')}
               </Link>
             </div>
 
@@ -81,15 +85,15 @@ const Home: React.FC<HomeProps> = () => {
             <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-400">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-[#00B88A]" />
-                <span>Free during beta</span>
+                <span>{t('hero.trustSignals.freeDuringBeta')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-[#00B88A]" />
-                <span>iOS & Android</span>
+                <span>{t('hero.trustSignals.iosAndroid')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-[#00B88A]" />
-                <span>HIPAA & GDPR compliant</span>
+                <span>{t('hero.trustSignals.hipaaGdpr')}</span>
               </div>
             </div>
           </div>
@@ -107,16 +111,16 @@ const Home: React.FC<HomeProps> = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-lg text-[#00B88A] font-semibold mb-4">Sound familiar?</p>
+            <p className="text-lg text-[#00B88A] font-semibold mb-4">{t('problem.eyebrow')}</p>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#17242C] mb-8 leading-relaxed">
-              Another parent call about ice time.<br /><br />
-              Another suspension to track manually.<br /><br />
-              Another practice planned from scratch.<br /><br />
-              Another budget reconciled by hand.<br /><br />
-              <span className="text-gray-400">Chaos for everything else.</span>
+              {t('problem.iceTime')}<br /><br />
+              {t('problem.suspension')}<br /><br />
+              {t('problem.practice')}<br /><br />
+              {t('problem.budget')}<br /><br />
+              <span className="text-gray-400">{t('problem.chaos')}</span>
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Managing a team shouldn't mean juggling a dozen tools and a group chat that never stops.
+              {t('problem.description')}
             </p>
           </div>
         </div>
@@ -127,12 +131,12 @@ const Home: React.FC<HomeProps> = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
-              <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">TeamOps</p>
+              <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">{t('features.eyebrow')}</p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#17242C] mb-6">
-                Finally, one app that does it all
+                {t('features.title')}
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Stop juggling tools. Start running your team.
+                {t('features.subtitle')}
               </p>
             </div>
 
@@ -140,33 +144,33 @@ const Home: React.FC<HomeProps> = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <FeatureCard
                 icon={<Clock className="w-6 h-6" />}
-                title="Scheduling that syncs"
-                description="Games, practices, and events. Everyone sees the same schedule. RSVP with one tap."
+                title={t('features.scheduling.title')}
+                description={t('features.scheduling.description')}
               />
               <FeatureCard
                 icon={<Users className="w-6 h-6" />}
-                title="Roster management"
-                description="Player profiles, positions, jersey numbers. Invite parents with a link."
+                title={t('features.roster.title')}
+                description={t('features.roster.description')}
               />
               <FeatureCard
                 icon={<Shield className="w-6 h-6" />}
-                title="Medical compliance"
-                description="HIPAA-compliant injury reports. CRT5 concussion protocols. Return-to-play tracking. Hockey Canada forms built-in."
+                title={t('features.medical.title')}
+                description={t('features.medical.description')}
               />
               <FeatureCard
                 icon={<Zap className="w-6 h-6" />}
-                title="Instant attendance"
-                description="No more 'who's coming?' group texts. Real-time headcounts for every event."
+                title={t('features.attendance.title')}
+                description={t('features.attendance.description')}
               />
               <FeatureCard
                 icon={<Smartphone className="w-6 h-6" />}
-                title="Built-in ticketing"
-                description="Parents submit issues in one place. No more calls, texts, or emails flooding your phone."
+                title={t('features.ticketing.title')}
+                description={t('features.ticketing.description')}
               />
               <FeatureCard
                 icon={<CheckCircle className="w-6 h-6" />}
-                title="Payment tracking"
-                description="See who's paid, who hasn't, and how much is outstanding. No spreadsheets."
+                title={t('features.payments.title')}
+                description={t('features.payments.description')}
               />
             </div>
 
@@ -176,7 +180,7 @@ const Home: React.FC<HomeProps> = () => {
                 to="/products/teamops"
                 className="group inline-flex items-center justify-center px-8 py-4 bg-[#17242C] text-white font-semibold rounded-xl hover:bg-[#0f1a22] transition-all duration-300"
               >
-                See all features
+                {tc('buttons.seeAllFeatures')}
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -188,12 +192,12 @@ const Home: React.FC<HomeProps> = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">Our Platforms</p>
+            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">{t('platforms.eyebrow')}</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#17242C] mb-4">
-              Software for every level of sport
+              {t('platforms.title')}
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              From youth rec leagues to professional franchises.
+              {t('platforms.subtitle')}
             </p>
           </div>
 
@@ -207,24 +211,28 @@ const Home: React.FC<HomeProps> = () => {
               <div className="absolute top-6 right-6">
                 <span className="inline-flex items-center gap-1.5 bg-[#00B88A]/10 text-[#00B88A] px-3 py-1 rounded-full text-xs font-semibold">
                   <span className="w-1.5 h-1.5 bg-[#00B88A] rounded-full animate-pulse" />
-                  Beta Available
+                  {t('platforms.teamops.badge')}
                 </span>
               </div>
 
-              <div className="w-16 h-16 bg-gradient-to-br from-[#00B88A] to-[#008C8D] rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform duration-500">
-                <Users className="w-8 h-8" />
+              <div className="h-20 mb-8 group-hover:scale-110 transition-transform duration-500">
+                <img
+                  src="/TeamOps_app_icon.png"
+                  alt="TeamOps Logo"
+                  className="h-full w-auto object-contain rounded-xl"
+                />
               </div>
 
               <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-2">
-                For Youth & Amateur Teams
+                {t('platforms.teamops.eyebrow')}
               </p>
-              <h3 className="text-3xl font-bold text-[#17242C] mb-4">TeamOps</h3>
+              <h3 className="text-3xl font-bold text-[#17242C] mb-4">{t('platforms.teamops.title')}</h3>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Everything your team needs in one app. Scheduling, rosters, medical compliance, payments, and communication—built for managers, coaches, trainers, parents, and players.
+                {t('platforms.teamops.description')}
               </p>
 
               <div className="flex items-center text-[#00B88A] font-semibold group-hover:gap-4 gap-2 transition-all duration-300">
-                Learn more
+                {tc('buttons.learnMore')}
                 <ArrowRight className="w-5 h-5" />
               </div>
             </Link>
@@ -237,24 +245,24 @@ const Home: React.FC<HomeProps> = () => {
               {/* Badge */}
               <div className="absolute top-6 right-6">
                 <span className="inline-flex items-center gap-1.5 bg-orange-500/10 text-orange-600 px-3 py-1 rounded-full text-xs font-semibold">
-                  In Development
+                  {t('platforms.proinvest.badge')}
                 </span>
               </div>
 
-              <div className="w-16 h-16 bg-gradient-to-br from-[#00B88A] to-[#008C8D] rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform duration-500">
-                <Trophy className="w-8 h-8" />
+              <div className="w-20 h-20 bg-gradient-to-br from-[#00B88A] to-[#008C8D] rounded-2xl flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform duration-500">
+                <Trophy className="w-10 h-10" />
               </div>
 
               <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-2">
-                For Professional Organizations
+                {t('platforms.proinvest.eyebrow')}
               </p>
-              <h3 className="text-3xl font-bold text-[#17242C] mb-4">ProInvest Ecosystem</h3>
+              <h3 className="text-3xl font-bold text-[#17242C] mb-4">{t('platforms.proinvest.title')}</h3>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Enterprise fan engagement infrastructure. White-label mobile apps, real-time contests, lifetime loyalty programs, and first-party analytics for pro sports teams.
+                {t('platforms.proinvest.description')}
               </p>
 
               <div className="flex items-center text-[#00B88A] font-semibold group-hover:gap-4 gap-2 transition-all duration-300">
-                Learn more
+                {tc('buttons.learnMore')}
                 <ArrowRight className="w-5 h-5" />
               </div>
             </Link>
@@ -267,9 +275,9 @@ const Home: React.FC<HomeProps> = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">Backed By</p>
+              <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">{t('accelerators.eyebrow')}</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-[#17242C]">
-                Canada's top accelerators believe in what we're building
+                {t('accelerators.title')}
               </h2>
             </div>
 
@@ -279,13 +287,13 @@ const Home: React.FC<HomeProps> = () => {
                 <div className="h-12 mb-6 flex items-center">
                   <img src="/next-ai-logo.png" alt="NextAI" className="h-full object-contain" />
                 </div>
-                <h3 className="text-xl font-bold text-[#17242C] mb-2">NextAI Cohort 8</h3>
+                <h3 className="text-xl font-bold text-[#17242C] mb-2">{t('accelerators.nextai.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Canada's premier AI accelerator. We completed the program and presented at Demo Day September 2025.
+                  {t('accelerators.nextai.description')}
                 </p>
                 <div className="flex items-center gap-2">
                   <span className="px-3 py-1 bg-[#00B88A]/10 text-[#00B88A] rounded-full text-sm font-semibold">
-                    Completed
+                    {t('accelerators.nextai.status')}
                   </span>
                 </div>
               </div>
@@ -295,13 +303,13 @@ const Home: React.FC<HomeProps> = () => {
                 <div className="h-12 mb-6 flex items-center">
                   <img src="/Zero_Labs_Logo.png" alt="ZeroLabs" className="h-full object-contain" />
                 </div>
-                <h3 className="text-xl font-bold text-[#17242C] mb-2">ZeroLabs Cohort 6</h3>
+                <h3 className="text-xl font-bold text-[#17242C] mb-2">{t('accelerators.zerolabs.title')}</h3>
                 <p className="text-gray-600 mb-4">
-                  Innovation Launch Pad focused on commercialization and market entry. Completed October 2025.
+                  {t('accelerators.zerolabs.description')}
                 </p>
                 <div className="flex items-center gap-2">
                   <span className="px-3 py-1 bg-[#00B88A]/10 text-[#00B88A] rounded-full text-sm font-semibold">
-                    Completed
+                    {t('accelerators.zerolabs.status')}
                   </span>
                 </div>
               </div>
@@ -314,19 +322,18 @@ const Home: React.FC<HomeProps> = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">Who We Are</p>
+            <p className="text-sm font-semibold text-[#00B88A] uppercase tracking-wider mb-4">{t('aboutTeaser.eyebrow')}</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#17242C] mb-6">
-              Built by coaches. For coaches.
+              {t('aboutTeaser.title')}
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              We've spent years managing youth hockey teams—chasing RSVPs, tracking injuries on paper,
-              and scrambling over practice plans and game rosters. We built TeamOps because we needed it ourselves.
+              {t('aboutTeaser.description')}
             </p>
             <Link
               to="/about"
               className="inline-flex items-center text-[#00B88A] font-semibold hover:gap-4 gap-2 transition-all duration-300 text-lg"
             >
-              Meet the team
+              {tc('buttons.meetTheTeam')}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
@@ -339,14 +346,14 @@ const Home: React.FC<HomeProps> = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 rounded-full text-sm font-medium mb-8">
               <Apple className="w-4 h-4" />
-              Available on TestFlight
+              {t('finalCta.badge')}
             </div>
 
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              Ready to simplify your season?
+              {t('finalCta.title')}
             </h2>
             <p className="text-xl text-gray-400 mb-10 max-w-xl mx-auto">
-              Join teams already using TeamOps to run smoother seasons. Free during beta.
+              {t('finalCta.description')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -354,14 +361,14 @@ const Home: React.FC<HomeProps> = () => {
                 to="/contact"
                 className="group inline-flex items-center justify-center px-8 py-4 bg-[#00B88A] text-white font-semibold rounded-xl hover:bg-[#00a37d] transition-all duration-300"
               >
-                Get early access
+                {tc('buttons.getEarlyAccess')}
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/products/teamops"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white/10 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300"
               >
-                Learn more
+                {tc('buttons.learnMore')}
               </Link>
             </div>
           </div>
