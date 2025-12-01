@@ -10,12 +10,12 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm py-4">
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4 md:px-8 lg:px-12">
         <div className="flex justify-between items-center">
           <Logo />
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             <NavLinks />
             <LanguageToggle />
           </div>
