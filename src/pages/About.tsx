@@ -138,6 +138,15 @@ const About = () => {
             >
               <img src="/next-ai-logo.png" alt="Next Canada Logo" className="w-full h-auto" />
             </a>
+            <span className="text-3xl font-semibold text-gray-700 mx-4">&</span>
+            <a
+              href="https://www.youraccelerator.com/zerolabs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-48 h-auto transition-opacity duration-300 hover:opacity-80"
+            >
+              <img src="/Zero_Labs_Logo.png" alt="Zero Labs Logo" className="w-full h-auto" />
+            </a>
           </div>
         </div>
       </section>
