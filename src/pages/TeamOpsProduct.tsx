@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
 import {
   ArrowRight,
   CheckCircle,
@@ -27,6 +28,7 @@ const TeamOpsProduct: React.FC = () => {
 
   return (
     <>
+      <SEO />
       {/* Hero */}
       <section className="relative min-h-[90vh] bg-gradient-to-br from-[#17242C] via-[#10605A] to-[#004953] text-white overflow-hidden flex items-center">
         {/* Grid pattern */}

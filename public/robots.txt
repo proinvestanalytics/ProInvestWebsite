@@ -1,0 +1,9 @@
+# robots.txt for proinvest.trade
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://proinvest.trade/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1

@@ -7,6 +7,7 @@ import TeamOpsProduct from './pages/TeamOpsProduct';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import FeatureRequest from './pages/FeatureRequest';
+import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
 import VideoModal from './components/VideoModal';
 import './styles/globals.css';
@@ -34,6 +35,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/feature-request" element={<FeatureRequest />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

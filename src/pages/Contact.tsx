@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Send, Mail, User, MessageSquare, MapPin } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   const { t } = useTranslation('contact');
@@ -63,6 +64,7 @@ const Contact = () => {
 
   return (
     <div className="pt-24 pb-16">
+      <SEO />
       <section className="relative min-h-[60vh] bg-gradient-to-br from-[#17242C] via-[#10605A] to-[#004953] text-white overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 bg-[url('/hockey-faceoff.png')] bg-cover bg-center opacity-10"></div>

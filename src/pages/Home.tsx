@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
 import {
   ArrowRight,
   Users,
@@ -24,6 +25,7 @@ const Home: React.FC<HomeProps> = () => {
 
   return (
     <>
+      <SEO />
       {/* Hero Section - Clean, confident, aspirational */}
       <section className="relative min-h-screen bg-gradient-to-br from-[#17242C] via-[#10605A] to-[#004953] text-white overflow-hidden">
         {/* Subtle grid pattern */}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Send, Mail, User, Lightbulb, ChevronDown, Users, Tag, AlertCircle, ThumbsUp, Clock, CheckCircle, XCircle, Loader2 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 interface FeatureRequestItem {
   id: string;
@@ -180,6 +181,7 @@ const FeatureRequest = () => {
 
   return (
     <div className="pt-24 pb-16">
+      <SEO />
       {/* Hidden iframe for form submission */}
       <iframe name="hidden_iframe" style={{ display: 'none' }} title="hidden"></iframe>
 
