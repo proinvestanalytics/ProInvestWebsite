@@ -99,6 +99,12 @@ const NavLinks: React.FC = () => {
         {t('nav.about')}
       </Link>
       <Link
+        to="/feature-request"
+        className="text-primary font-medium hover:text-secondary transition-colors duration-300"
+      >
+        {t('nav.featureRequest')}
+      </Link>
+      <Link
         to="/contact"
         className="text-primary font-medium hover:text-secondary transition-colors duration-300"
       >
@@ -156,6 +162,13 @@ const MobileNavLinks: React.FC<MobileNavLinksProps> = ({ onClose }) => {
         className="text-primary font-medium hover:text-secondary transition-colors duration-300"
       >
         {t('nav.about')}
+      </Link>
+      <Link
+        to="/feature-request"
+        onClick={onClose}
+        className="text-primary font-medium hover:text-secondary transition-colors duration-300"
+      >
+        {t('nav.featureRequest')}
       </Link>
       <Link
         to="/contact"

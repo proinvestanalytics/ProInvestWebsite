@@ -38,6 +38,14 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link
+                  to="/feature-request"
+                  className="text-white/80 hover:text-secondary transition-colors duration-300"
+                >
+                  {t('nav.featureRequest')}
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/contact"
                   className="text-white/80 hover:text-secondary transition-colors duration-300"
                 >

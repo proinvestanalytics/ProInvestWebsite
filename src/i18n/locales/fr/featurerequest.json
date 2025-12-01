@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "badge": "Demande TeamOps",
+    "title": "Demande TeamOps",
+    "titleHighlight": "Fonctionnalité",
+    "subtitle": "Vous avez une idée pour améliorer TeamOps? Nous aimerions entendre vos suggestions pour de nouvelles fonctionnalités, améliorations ou corrections."
+  },
+  "form": {
+    "title": "Soumettez votre idée",
+    "name": {
+      "label": "Nom",
+      "placeholder": "Votre nom"
+    },
+    "email": {
+      "label": "Courriel",
+      "placeholder": "votre@courriel.com"
+    },
+    "role": {
+      "label": "Votre rôle",
+      "placeholder": "Sélectionnez votre rôle",
+      "options": {
+        "manager": "Gérant",
+        "coach": "Entraîneur",
+        "player": "Joueur",
+        "trainer": "Préparateur physique",
+        "parent": "Parent"
+      }
+    },
+    "category": {
+      "label": "Catégorie",
+      "placeholder": "Sélectionnez une catégorie",
+      "options": {
+        "ui": "Interface/Design",
+        "performance": "Performance",
+        "newFeature": "Nouvelle fonctionnalité",
+        "bugFix": "Correction de bogue"
+      }
+    },
+    "priority": {
+      "label": "Priorité",
+      "placeholder": "Sélectionnez le niveau de priorité",
+      "options": {
+        "niceToHave": "Souhaitable",
+        "important": "Important",
+        "critical": "Critique"
+      }
+    },
+    "description": {
+      "label": "Description de la fonctionnalité",
+      "placeholder": "Décrivez la fonctionnalité ou l'amélioration que vous aimeriez voir..."
+    },
+    "submit": "Soumettre la demande",
+    "submitting": "Envoi en cours...",
+    "success": "Merci! Votre demande de fonctionnalité a été soumise avec succès.",
+    "error": "Une erreur s'est produite lors de la soumission de votre demande. Veuillez réessayer plus tard."
+  },
+  "info": {
+    "title": "Comment ça fonctionne",
+    "steps": {
+      "submit": {
+        "title": "Soumettre",
+        "description": "Dites-nous quelle fonctionnalité vous aimeriez voir dans TeamOps"
+      },
+      "review": {
+        "title": "Évaluation",
+        "description": "Notre équipe examine toutes les soumissions et évalue leur faisabilité"
+      },
+      "implement": {
+        "title": "Implémentation",
+        "description": "Les fonctionnalités populaires et utiles sont ajoutées à notre feuille de route"
+      }
+    }
+  },
+  "board": {
+    "title": "Tableau des demandes",
+    "subtitle": "Voyez ce que les autres ont demandé et votez pour les fonctionnalités que vous aimeriez voir. Les demandes les plus populaires nous aident à prioriser notre feuille de route.",
+    "empty": "Aucune demande de fonctionnalité pour le moment. Soyez le premier à en soumettre une!",
+    "anonymousUser": "{{role}} anonyme",
+    "filters": {
+      "all": "Tout",
+      "submitted": "Soumis",
+      "underReview": "En révision",
+      "planned": "Planifié",
+      "inProgress": "En cours",
+      "completed": "Complété",
+      "notPlanned": "Non planifié"
+    }
+  }
+}

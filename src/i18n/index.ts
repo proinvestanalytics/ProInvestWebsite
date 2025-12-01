@@ -9,6 +9,7 @@ import enTeamops from './locales/en/teamops.json';
 import enProducts from './locales/en/products.json';
 import enAbout from './locales/en/about.json';
 import enContact from './locales/en/contact.json';
+import enFeaturerequest from './locales/en/featurerequest.json';
 
 // Import French translations
 import frCommon from './locales/fr/common.json';
@@ -17,6 +18,7 @@ import frTeamops from './locales/fr/teamops.json';
 import frProducts from './locales/fr/products.json';
 import frAbout from './locales/fr/about.json';
 import frContact from './locales/fr/contact.json';
+import frFeaturerequest from './locales/fr/featurerequest.json';
 
 const resources = {
   en: {
@@ -26,6 +28,7 @@ const resources = {
     products: enProducts,
     about: enAbout,
     contact: enContact,
+    featurerequest: enFeaturerequest,
   },
   fr: {
     common: frCommon,
@@ -34,6 +37,7 @@ const resources = {
     products: frProducts,
     about: frAbout,
     contact: frContact,
+    featurerequest: frFeaturerequest,
   },
 };
 
@@ -44,7 +48,7 @@ i18n
     resources,
     fallbackLng: 'en',
     defaultNS: 'common',
-    ns: ['common', 'home', 'teamops', 'products', 'about', 'contact'],
+    ns: ['common', 'home', 'teamops', 'products', 'about', 'contact', 'featurerequest'],
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],

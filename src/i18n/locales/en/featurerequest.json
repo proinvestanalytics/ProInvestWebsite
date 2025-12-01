@@ -1,0 +1,89 @@
+{
+  "hero": {
+    "badge": "TeamOps Feature Request",
+    "title": "TeamOps Feature",
+    "titleHighlight": "Request",
+    "subtitle": "Have an idea to improve TeamOps? We'd love to hear your suggestions for new features, improvements, or fixes."
+  },
+  "form": {
+    "title": "Submit Your Idea",
+    "name": {
+      "label": "Name",
+      "placeholder": "Your name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "your@email.com"
+    },
+    "role": {
+      "label": "Your Role",
+      "placeholder": "Select your role",
+      "options": {
+        "manager": "Manager",
+        "coach": "Coach",
+        "player": "Player",
+        "trainer": "Trainer",
+        "parent": "Parent"
+      }
+    },
+    "category": {
+      "label": "Category",
+      "placeholder": "Select a category",
+      "options": {
+        "ui": "UI/Design",
+        "performance": "Performance",
+        "newFeature": "New Feature",
+        "bugFix": "Bug Fix"
+      }
+    },
+    "priority": {
+      "label": "Priority",
+      "placeholder": "Select priority level",
+      "options": {
+        "niceToHave": "Nice-to-have",
+        "important": "Important",
+        "critical": "Critical"
+      }
+    },
+    "description": {
+      "label": "Feature Description",
+      "placeholder": "Describe the feature or improvement you'd like to see..."
+    },
+    "submit": "Submit Request",
+    "submitting": "Submitting...",
+    "success": "Thank you! Your feature request has been submitted successfully.",
+    "error": "There was an error submitting your request. Please try again later."
+  },
+  "info": {
+    "title": "How It Works",
+    "steps": {
+      "submit": {
+        "title": "Submit",
+        "description": "Tell us about the feature you'd like to see in TeamOps"
+      },
+      "review": {
+        "title": "Review",
+        "description": "Our team reviews all submissions and assesses feasibility"
+      },
+      "implement": {
+        "title": "Implement",
+        "description": "Popular and valuable features get added to our roadmap"
+      }
+    }
+  },
+  "board": {
+    "title": "Feature Request Board",
+    "subtitle": "See what others have requested and vote for features you'd like to see. The most popular requests help us prioritize our roadmap.",
+    "empty": "No feature requests yet. Be the first to submit one!",
+    "anonymousUser": "Anonymous {{role}}",
+    "filters": {
+      "all": "All",
+      "submitted": "Submitted",
+      "underReview": "Under Review",
+      "planned": "Planned",
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "notPlanned": "Not Planned"
+    }
+  }
+}
