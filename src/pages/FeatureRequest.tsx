@@ -19,6 +19,23 @@ const FeatureRequest = () => {
   const [isLoadingRequests, setIsLoadingRequests] = useState(true);
   const [votedIds, setVotedIds] = useState<Set<string>>(new Set());
   const [statusFilter, setStatusFilter] = useState('all');
+  const [submitted, setSubmitted] = useState(false);
+
+  const formRef = React.useRef<HTMLFormElement>(null);
+
+  const handleFormSubmit = () => {
+    setTimeout(() => {
+      setSubmitted(true);
+      // Clear the form
+      if (formRef.current) {
+        formRef.current.reset();
+      }
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+    }, 500);
+  };
 
   // Load voted IDs from localStorage
   useEffect(() => {
@@ -163,6 +180,9 @@ const FeatureRequest = () => {
 
   return (
     <div className="pt-24 pb-16">
+      {/* Hidden iframe for form submission */}
+      <iframe name="hidden_iframe" style={{ display: 'none' }} title="hidden"></iframe>
+
       <section className="relative min-h-[60vh] bg-gradient-to-br from-[#17242C] via-[#10605A] to-[#004953] text-white overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
@@ -226,7 +246,7 @@ const FeatureRequest = () => {
 
             {/* Right side - Form */}
             <div>
-              <form action="https://hooks.airtable.com/workflows/v1/genericWebhook/appTdGGAOwnN8q4D8/wflUp0QGsoHnnxFwo/wtr6As6SCKZhvyBYa" method="POST" className="bg-white rounded-2xl shadow-xl p-8">
+              <form ref={formRef} action="https://hooks.airtable.com/workflows/v1/genericWebhook/appTdGGAOwnN8q4D8/wflUp0QGsoHnnxFwo/wtr6As6SCKZhvyBYa" method="POST" target="hidden_iframe" onSubmit={handleFormSubmit} className="bg-white rounded-2xl shadow-xl p-8">
                 <h3 className="text-2xl font-bold text-primary mb-6">{t('form.title')}</h3>
                 <div className="space-y-5">
                   {/* Name */}
@@ -357,6 +377,13 @@ const FeatureRequest = () => {
                     <Send size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
                     {t('form.submit')}
                   </button>
+
+                  {/* Success Message */}
+                  {submitted && (
+                    <div className="mt-4 p-3 bg-green-50 text-green-700 rounded-lg">
+                      {t('form.success')}
+                    </div>
+                  )}
                 </div>
               </form>
             </div>
