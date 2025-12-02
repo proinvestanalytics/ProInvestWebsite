@@ -390,6 +390,23 @@ const TeamOpsProduct: React.FC = () => {
                 <SportPill sport={t('multiSport.hockey')} available />
                 <SportPill sport={t('multiSport.moreSports')} comingSoonText={t('multiSport.comingSoon')} />
               </div>
+
+              {/* Legal Links */}
+              <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm">
+                <Link
+                  to="/teamops/privacy"
+                  className="text-gray-500 hover:text-gray-300 underline transition-colors"
+                >
+                  {t('multiSport.privacyPolicy')}
+                </Link>
+                <span className="text-gray-600">|</span>
+                <Link
+                  to="/teamops/terms"
+                  className="text-gray-500 hover:text-gray-300 underline transition-colors"
+                >
+                  {t('multiSport.termsOfService')}
+                </Link>
+              </div>
             </div>
           </div>
         </div>

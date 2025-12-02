@@ -1,9 +1,26 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+
+// Disable browser scroll restoration and reset scroll on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual';
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import TeamOpsProduct from './pages/TeamOpsProduct';
+import TeamOpsPrivacy from './pages/TeamOpsPrivacy';
+import TeamOpsTerms from './pages/TeamOpsTerms';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import FeatureRequest from './pages/FeatureRequest';
@@ -25,6 +42,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
@@ -32,6 +50,8 @@ function App() {
             <Route path="/" element={<Home openModal={openVideoModal} />} />
             <Route path="/products/proinvest-ecosystem" element={<Products />} />
             <Route path="/products/teamops" element={<TeamOpsProduct />} />
+            <Route path="/teamops/privacy" element={<TeamOpsPrivacy />} />
+            <Route path="/teamops/terms" element={<TeamOpsTerms />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/feature-request" element={<FeatureRequest />} />
