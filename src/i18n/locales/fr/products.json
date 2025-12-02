@@ -1,0 +1,107 @@
+{
+  "hero": {
+    "badge": "Écosystème intégré",
+    "title": "Notre",
+    "titleHighlight": "plateforme",
+    "description": "Infrastructure d'engagement des partisans pour le sport pro. Apps de ligue propulsées par concours temps réel (OGC), fidélité (SSC) et analytique (ProInsight)."
+  },
+  "showcase": {
+    "fullstack": {
+      "title": "Apps ligue et équipe",
+      "subtitle": "Expérience mobile complète",
+      "status": "Prêt pour démo",
+      "description": "Expérience mobile complète ; hub de ligue + vues équipe avec votre marque et SSO. OGC et SSC natifs ; ProInsight pour l'admin.",
+      "features": [
+        "Interface personnalisable multi-équipes",
+        "SSO avec accès par rôle",
+        "Navigation ligue ↔ équipe",
+        "Contenu, notifications, liens profonds",
+        "WebView pour OGC / SSC",
+        "Capture ID partisan (vers ProInsight)"
+      ],
+      "techSpecs": {
+        "title": "Déploiement",
+        "items": [
+          "App complète, ou",
+          "WebView dans votre app",
+          "Pilote : ~2-3 semaines"
+        ]
+      }
+    },
+    "ssc": {
+      "title": "Club du 7e joueur",
+      "subtitle": "Fidélité à vie",
+      "status": "95 % - Prêt pilote",
+      "description": "Programme multigénérationnel : 9 niveaux de Prospect à Légende. Double points (Statut + Échangeables) pour progression et récompenses.",
+      "features": [
+        "Double points : Statut + Échangeables",
+        "9 niveaux avec badges auto",
+        "Marché récompenses",
+        "Intégration OGC : points directs",
+        "Abonnements + comptes familiaux"
+      ],
+      "techSpecs": {
+        "title": "Feuille de route",
+        "items": [
+          "Comptes multigénérationnels",
+          "Blockchain pour portabilité",
+          "Améliorations UX/UI"
+        ]
+      }
+    },
+    "ogc": {
+      "title": "Concours d'un match",
+      "subtitle": "Jeu temps réel",
+      "status": "70 % complété",
+      "description": "Jeu où les partisans gèrent des formations de 3 joueurs en direct. Catalogue d'actifs commanditaires avec 6 types d'activation.",
+      "features": [
+        "Interface temps réel + classements",
+        "Changements illimités (configurable)",
+        "Crédit auto vers SSC",
+        "WebView prouvé dans OffPost",
+        "Catalogue commanditaires (6 types)",
+        "Personnalisation via ProInsight",
+        "Analytique engagement/ROI"
+      ],
+      "techSpecs": {
+        "title": "Technique",
+        "items": [
+          "Pointage par vision ordinateur",
+          "WebSockets temps réel",
+          "Multi-plateforme",
+          "2-3 sem. personnalisation"
+        ]
+      }
+    },
+    "proinsight": {
+      "title": "ProInsight Analytics",
+      "subtitle": "Suite gestion entreprise",
+      "status": "Base prête - IA requise",
+      "description": "Plateforme contrôlant OGC, fidélité SSC et analytique. Portail commanditaires en libre-service.",
+      "features": [
+        "Gestion concours OGC",
+        "Admin fidélité SSC",
+        "Portail commanditaires",
+        "Données et rapports",
+        "Optimisation revenus",
+        "IA prédictive et automatisation"
+      ],
+      "techSpecs": {
+        "title": "Potentiel d'échelle",
+        "items": [
+          "Déploiement entreprise",
+          "Architecture cloud évolutive",
+          "Multi-équipes prêt",
+          "Co-développement requis"
+        ]
+      }
+    },
+    "watchOgcDemo": "Voir démo OGC",
+    "watchSscDemo": "Voir démo SSC",
+    "featureStatus": {
+      "ready": "Prêt",
+      "demo": "Démo",
+      "development": "En dév."
+    }
+  }
+}

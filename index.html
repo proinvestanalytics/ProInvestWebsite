@@ -2,19 +2,111 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProInvest - Hockey & Technology</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/TeamOps_app_icon.png" />
+    <link rel="apple-touch-icon" href="/TeamOps_app_icon.png" />
+
+    <!-- Default Title (will be overridden by react-helmet-async) -->
+    <title>ProInvest - Sports Team Management Platform</title>
+
+    <!-- Default Meta Tags (fallbacks for crawlers that don't execute JS) -->
+    <meta name="description" content="ProInvest builds technology platforms for modern sports. TeamOps is the all-in-one team management app for youth and amateur sports teams." />
+    <meta name="keywords" content="sports team management, hockey team app, youth sports software, TeamOps, ProInvest" />
+    <meta name="author" content="ProInvest" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Defaults -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ProInvest" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_CA" />
+    <meta property="og:image" content="https://proinvest.trade/TeamOps_app_icon.png" />
+
+    <!-- Twitter Card Defaults -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://proinvest.trade/TeamOps_app_icon.png" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#17242C" />
+    <meta name="msapplication-TileColor" content="#17242C" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ProInvest",
+      "url": "https://proinvest.trade",
+      "logo": "https://proinvest.trade/proinvest-logo.png",
+      "description": "ProInvest builds technology platforms for modern sports — from youth teams to professional leagues.",
+      "foundingDate": "2024",
+      "founders": [
+        {"@type": "Person", "name": "Philippe Trop"},
+        {"@type": "Person", "name": "Blake Nielsen"},
+        {"@type": "Person", "name": "Salvatore Papia"},
+        {"@type": "Person", "name": "Martin Villeneuve"}
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Montreal",
+        "addressRegion": "Quebec",
+        "addressCountry": "Canada"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "hello@proinvest.trade"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/philippetrop/",
+        "https://www.linkedin.com/in/blake-nielsen-proinvest/"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data: SoftwareApplication (TeamOps) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TeamOps",
+      "applicationCategory": "Sports",
+      "operatingSystem": "iOS, Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free during beta"
+      },
+      "description": "The team management platform that replaces your spreadsheets, group chats, and paper forms. One app for scheduling, rosters, medical compliance, attendance, and payments.",
+      "featureList": [
+        "Team scheduling and calendar sync",
+        "Roster management",
+        "HIPAA-compliant medical records",
+        "Attendance tracking",
+        "Payment tracking",
+        "Parent and coach communication"
+      ],
+      "screenshot": "https://proinvest.trade/TeamOps_app_icon.png",
+      "author": {
+        "@type": "Organization",
+        "name": "ProInvest"
+      }
+    }
+    </script>
+
+    <!-- SPA Redirect Script -->
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
       (function(l) {
         if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
+          var decoded = l.search.slice(1).split('&').map(function(s) {
             return s.replace(/~and~/g, '&')
           }).join('?');
           window.history.replaceState(null, null,

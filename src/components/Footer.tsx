@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Logo from './Logo';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation('common');
+
   return (
     <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-4">
@@ -10,42 +13,50 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <Logo />
             <p className="mt-4 text-white/80 max-w-lg">
-            ProInvest builds and powers team apps to transform fan attention into lasting loyalty and measurable sponsor revenue
+              {t('footer.description')}
             </p>
           </div>
-          
+
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
-                <a 
-                  href="/products" 
+                <Link
+                  to="/products/teamops"
                   className="text-white/80 hover:text-secondary transition-colors duration-300"
                 >
-                  Our Products
-                </a>
+                  {t('footer.ourProducts')}
+                </Link>
               </li>
               <li>
-                <a 
-                  href="/about" 
+                <Link
+                  to="/about"
                   className="text-white/80 hover:text-secondary transition-colors duration-300"
                 >
-                  About
-                </a>
+                  {t('footer.about')}
+                </Link>
               </li>
               <li>
-                <a 
-                  href="/contact" 
+                <Link
+                  to="/feature-request"
                   className="text-white/80 hover:text-secondary transition-colors duration-300"
                 >
-                  Contact Us
-                </a>
+                  {t('nav.featureRequest')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="text-white/80 hover:text-secondary transition-colors duration-300"
+                >
+                  {t('footer.contactUs')}
+                </Link>
               </li>
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
+            <h4 className="text-lg font-semibold mb-4">{t('footer.connectWithUs')}</h4>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/company/proinvest-analytics-inc/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors duration-300">
                 <span className="sr-only">LinkedIn</span>
@@ -68,9 +79,9 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="text-white/60">Copyright © 2025 ProInvest. All rights reserved.</p>
+          <p className="text-white/60">{t('footer.copyright')}</p>
         </div>
       </div>
     </footer>

@@ -1,0 +1,107 @@
+{
+  "hero": {
+    "badge": "Integrated Platform Ecosystem",
+    "title": "Our",
+    "titleHighlight": "Platform",
+    "description": "Complete fan engagement infrastructure for professional sports. Build league and team apps powered by real-time contests (OGC), lifetime loyalty (SSC), and first-party intelligence (ProInsight). Deploy as a full app or embed modules via WebView."
+  },
+  "showcase": {
+    "fullstack": {
+      "title": "Full-Stack League & Team Apps",
+      "subtitle": "Complete Mobile Experience",
+      "status": "Built & Demo-Ready",
+      "description": "Deliver a complete mobile experience; league hub + team views with your branding, SSO, and governance. OGC and SSC run as native screens; ProInsight provides administration and reporting.",
+      "features": [
+        "White-label UI/UX with multi-team theming",
+        "Identity & SSO with role-based access",
+        "League ↔ team navigation architecture",
+        "Content feeds, notifications, deep links",
+        "WebView hosts for OGC / SSC",
+        "First-party fan ID capture (flows into ProInsight)"
+      ],
+      "techSpecs": {
+        "title": "Deployment",
+        "items": [
+          "Full-stack app (we ship the app), or",
+          "In-app embedding (WebView inside your current app)",
+          "Pilot branding/SSO: ~2–3 weeks"
+        ]
+      }
+    },
+    "ssc": {
+      "title": "Seventh Skater Club",
+      "subtitle": "Lifetime Loyalty Ecosystem",
+      "status": "95% Complete - Pilot Ready",
+      "description": "Multi-generational loyalty program where fans progress through nine tiers from Prospect to Legend. Dual-point system (Status + Spendable) powers both long-term career progression and real-world rewards. Fully operational in OffPost demo.",
+      "features": [
+        "Dual-point architecture: Status + Spendable",
+        "Nine-tier career journey with automatic badge unlocks",
+        "Rewards marketplace: merchandise, experiences, perks",
+        "OGC integration: points credited directly from contests",
+        "Premium subscriptions + family account framework"
+      ],
+      "techSpecs": {
+        "title": "Development roadmap",
+        "items": [
+          "Multi-generational accounts (inheritance/sharing)",
+          "Blockchain ledger for secure, cross-team portability",
+          "Enhanced UX/UI refinements"
+        ]
+      }
+    },
+    "ogc": {
+      "title": "One-Game Contest",
+      "subtitle": "Real-Time Skill-Based Gaming",
+      "status": "70% Complete",
+      "description": "Interactive skill-based game where fans manage 3-player lineups during live NHL games. Features complete digital sponsor asset catalog with six integrated activation types woven seamlessly into gameplay. Creates entirely new revenue streams through strategic sponsor integration at optimal engagement moments.",
+      "features": [
+        "Real-time UI with lineup manager & leaderboards (rules-based/manual scoring demo)",
+        "Unlimited in-game swaps (configurable)",
+        "Loyalty linkage: automatic point crediting into SSC",
+        "WebView embedding proven in OffPost demo",
+        "Full sponsor asset catalog (six activation types)",
+        "Team customization via ProInsight",
+        "Engagement & ROI analytics"
+      ],
+      "techSpecs": {
+        "title": "Technical",
+        "items": [
+          "Automated scoring via computer vision",
+          "Real-time WebSockets",
+          "Cross-platform",
+          "2–3-week branding + SSO once pilot scope is set"
+        ]
+      }
+    },
+    "proinsight": {
+      "title": "ProInsight Analytics",
+      "subtitle": "Enterprise Management Suite",
+      "status": "Core Platform Ready - AI Development Required",
+      "description": "Complete ecosystem management platform controlling OGC contests, Seventh Skater loyalty programs, and enterprise analytics. Teams set sponsor portal permissions while sponsors get self-service campaign tools and ROI tracking.",
+      "features": [
+        "OGC contest creation and management",
+        "SSC loyalty program administration and rewards",
+        "Sponsor portal access with team-controlled permissions",
+        "Basic data ingest & reporting",
+        "Revenue optimization and attribution modeling",
+        "Advanced AI predictive analytics and automation"
+      ],
+      "techSpecs": {
+        "title": "Platform Scale Potential",
+        "items": [
+          "Built for enterprise deployment",
+          "Scalable cloud architecture",
+          "Multi-team deployment ready",
+          "Co-development partnership required"
+        ]
+      }
+    },
+    "watchOgcDemo": "Watch OGC Demo",
+    "watchSscDemo": "Watch SSC Demo",
+    "featureStatus": {
+      "ready": "Ready",
+      "demo": "Demo",
+      "development": "In Dev"
+    }
+  }
+}

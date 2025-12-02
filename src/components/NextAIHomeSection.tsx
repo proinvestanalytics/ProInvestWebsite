@@ -53,7 +53,7 @@ const AcceleratorProgramsSection = () => {
               
               <div className="text-base text-primary-caribbean leading-relaxed mb-6">
                 <p className="mb-4">
-                  Currently participating in ZeroLabs Innovation Launch Pad (starting October 2nd 2025). ZeroLabs provides commercialization guidance, compliance validation, and market entry strategy as we prepare for pilot deployment with professional sports organizations.
+                  Completed ZeroLabs Innovation Launch Pad (Cohort 6) in October 2025. ZeroLabs provided commercialization guidance, compliance validation, and market entry strategy as we prepare for pilot deployment with professional sports organizations.
                 </p>
               </div>
 
@@ -64,11 +64,11 @@ const AcceleratorProgramsSection = () => {
                   <div className="text-xs text-primary-caribbean">Launch Pad</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl font-bold text-primary-gunmetal mb-1">Oct 2, 2025</div>
-                  <div className="text-xs text-primary-caribbean">Start Date</div>
+                  <div className="text-xl font-bold text-primary-gunmetal mb-1">Oct 2025</div>
+                  <div className="text-xs text-primary-caribbean">Completed</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl font-bold text-primary-gunmetal mb-1">In Progress</div>
+                  <div className="text-xl font-bold text-primary-gunmetal mb-1">Complete</div>
                   <div className="text-xs text-primary-caribbean">Status</div>
                 </div>
               </div>

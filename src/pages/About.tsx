@@ -1,17 +1,45 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Linkedin } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const About = () => {
+  const { t } = useTranslation('about');
+
+  const teamMembers = [
+    {
+      key: 'philippe',
+      image: '/ptrop.png',
+      linkedinUrl: 'https://www.linkedin.com/in/philippetrop/'
+    },
+    {
+      key: 'blake',
+      image: '/blake.png',
+      linkedinUrl: 'https://www.linkedin.com/in/blake-nielsen-proinvest/'
+    },
+    {
+      key: 'salvatore',
+      image: '/sal.png',
+      linkedinUrl: 'https://www.linkedin.com/in/salvatore-papia-72875b295/'
+    },
+    {
+      key: 'martin',
+      image: '/martin.png',
+      linkedinUrl: 'https://www.linkedin.com/in/martin-villeneuve-65bb6444/'
+    }
+  ];
+
   return (
     <div className="pt-24 pb-16">
+      <SEO />
       <section className="relative min-h-[60vh] bg-gradient-to-br from-[#17242C] via-[#10605A] to-[#004953] text-white overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 bg-[url('/hockey-faceoff.png')] bg-cover bg-center opacity-10"></div>
-        
+
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
-          <div 
-            className="absolute inset-0" 
+          <div
+            className="absolute inset-0"
             style={{
               backgroundImage: `radial-gradient(circle at 20% 50%, rgba(0, 184, 138, 0.1) 0%, transparent 50%),
                                radial-gradient(circle at 80% 20%, rgba(0, 184, 138, 0.05) 0%, transparent 50%)`
@@ -23,17 +51,17 @@ const About = () => {
           <div className="text-center max-w-4xl mx-auto">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-[#00B88A]/20 border border-[#00B88A]/30 text-[#00B88A] px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm mb-6">
-              🚀 Meet the Team
+              🚀 {t('hero.badge')}
             </div>
 
             {/* Title */}
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Who <span className="bg-gradient-to-r from-[#00B88A] to-[#008C8D] bg-clip-text text-transparent">We Are</span>
+              {t('hero.title')} <span className="bg-gradient-to-r from-[#00B88A] to-[#008C8D] bg-clip-text text-transparent">{t('hero.titleHighlight')}</span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-xl text-[#F7F2F0] leading-relaxed">
-              Meet the team behind ProInvest's innovative hockey technology solutions, combining deep sports expertise with cutting-edge AI development to transform the fan experience.
+              {t('hero.subtitle')}
             </p>
           </div>
         </div>
@@ -43,34 +71,37 @@ const About = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-bold text-primary text-center mb-8">Our Mission</h2>
+            <h2 className="text-4xl font-bold text-primary text-center mb-8">{t('mission.title')}</h2>
             <div className="bg-gray-50 shadow-lg rounded-lg p-8">
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              We transform passive spectators into active participants during live games and throughout the season. By building complete team applications with real-time contests and lifetime loyalty built in, we capture fan attention during commercial breaks, game pauses, and year-round moments, converting that engagement into measurable value teams control.
+                {t('mission.intro')}
               </p>
               <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Through our integrated platform, we:
+                {t('mission.twoProducts')}
               </p>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-4 mb-6">
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-2 text-lg">•</span>
-                  <span className="text-lg">Deepen fan engagement during commercial breaks and game pauses</span>
+                  <span className="text-lg"><strong>{t('mission.teamops.name')}</strong> — {t('mission.teamops.description')}</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary font-bold mr-2 text-lg">•</span>
-                  <span className="text-lg">Create new revenue streams for teams through both sponsorships and direct fan monetization</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary font-bold mr-2 text-lg">•</span>
-                  <span className="text-lg">Deliver actionable first-party data for teams and partners</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-secondary font-bold mr-2 text-lg">•</span>
-                  <span className="text-lg">Strengthen the connection between fans and the game they love</span>
+                  <span className="text-lg"><strong>{t('mission.proinvest.name')}</strong> — {t('mission.proinvest.description')}</span>
                 </li>
               </ul>
+              <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                {t('mission.together')}
+              </p>
+              <ul className="space-y-2 mb-6">
+                {(t('mission.goals', { returnObjects: true }) as string[]).map((goal, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="text-secondary font-bold mr-2 text-lg">•</span>
+                    <span className="text-lg">{goal}</span>
+                  </li>
+                ))}
+              </ul>
               <p className="text-gray-700 text-lg leading-relaxed font-semibold">
-              We're not just building another app - we're revolutionizing how hockey is experienced by teams, sponsors, and fans.
+                {t('mission.conclusion')}
               </p>
             </div>
           </div>
@@ -80,37 +111,16 @@ const About = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
-            <TeamMember
-              name="Philippe Trop"
-              title="CEO & Founder"
-              image="/ptrop.png"
-              description="Hockey passion + entrepreneurial drive. Founded 360° Hockey Enterprises, developing hockey training solutions. Combines deep hockey knowledge with business strategy to drive fan engagement solutions."
-              linkedinUrl="https://www.linkedin.com/in/philippetrop/"
-            />
-            
-            <TeamMember
-              name="Blake Nielsen"
-              title="CBDO & Co-Founder"
-              image="/blake.png"
-              description="Combines a deep hockey passion with entrepreneurial drive. Sponsorship and partnership specialist skilled at bridging fans, brands, and leagues."
-              linkedinUrl="https://www.linkedin.com/in/blake-nielsen-proinvest/"
-            />
-            
-            <TeamMember
-              name="Salvatore Papia"
-              title="CTO & Co-Founder"
-              image="/sal.png"
-              description="Computer engineer and real-time systems architect. Leads the Hyperion sub-second scoring engine and AI/ML integrations. Ensures platform scalability and data security."
-              linkedinUrl="https://www.linkedin.com/in/salvatore-papia-72875b295/"
-            />
-            
-            <TeamMember
-              name="Martin Villeneuve"
-              title="CFO"
-              image="/martin.png"
-              description="Former COO at BMO Trust, responsible for managing CAD $65B in assets. Provides large-scale financial expertise, investor relations, and strategic growth focus. Ensures a sustainable runway with rigorous financial oversight."
-              linkedinUrl="https://www.linkedin.com/in/martin-villeneuve-65bb6444/"
-            />
+            {teamMembers.map((member) => (
+              <TeamMember
+                key={member.key}
+                name={t(`team.${member.key}.name`)}
+                title={t(`team.${member.key}.title`)}
+                image={member.image}
+                description={t(`team.${member.key}.description`)}
+                linkedinUrl={member.linkedinUrl}
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -119,14 +129,23 @@ const About = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-row items-center justify-center">
-            <h3 className="text-3xl font-semibold text-gray-700 mr-6">Powered by</h3>
-            <a 
-              href="https://www.nextcanada.com/next-ai/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <h3 className="text-3xl font-semibold text-gray-700 mr-6">{t('poweredBy')}</h3>
+            <a
+              href="https://www.nextcanada.com/next-ai/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-48 h-auto transition-opacity duration-300 hover:opacity-80"
             >
               <img src="/next-ai-logo.png" alt="Next Canada Logo" className="w-full h-auto" />
+            </a>
+            <span className="text-3xl font-semibold text-gray-700 mx-4">&</span>
+            <a
+              href="https://www.youraccelerator.com/zerolabs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-48 h-auto transition-opacity duration-300 hover:opacity-80"
+            >
+              <img src="/Zero_Labs_Logo.png" alt="Zero Labs Logo" className="w-full h-auto" />
             </a>
           </div>
         </div>
@@ -152,10 +171,10 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, title, image, description
             <img src={image} alt={name} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300" />
           </div>
           <div className="absolute -bottom-4 left-1/2 -translate-x-1/2">
-            <a 
-              href={linkedinUrl} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href={linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="h-10 w-10 bg-white rounded-full shadow-lg hover:bg-secondary hover:text-white transition-colors duration-300 flex items-center justify-center"
             >
               <Linkedin size={20} />

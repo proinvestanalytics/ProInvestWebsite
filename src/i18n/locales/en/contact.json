@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "badge": "Get In Touch",
+    "title": "Contact",
+    "titleHighlight": "Us",
+    "subtitle": "Have questions about our products or want to book a demo? We'd love to hear from you."
+  },
+  "form": {
+    "title": "Get in Touch",
+    "name": {
+      "label": "Name",
+      "placeholder": "Your name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "your@email.com"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Your message..."
+    },
+    "submit": "Send Message",
+    "submitting": "Submitting...",
+    "success": "Your message has been sent successfully!",
+    "error": "There was an error sending your message. Please try again later."
+  },
+  "info": {
+    "email": {
+      "title": "Email",
+      "value": "blakenielsen@proinvest.trade"
+    },
+    "location": {
+      "title": "Located",
+      "value": "Montreal, QC & Toronto, ON"
+    }
+  }
+}

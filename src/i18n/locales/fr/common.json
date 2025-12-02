@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "ourProducts": "Nos produits",
+    "teamops": "TeamOps",
+    "teamopsDesc": "Pour les équipes jeunesse et amateurs",
+    "proinvestEcosystem": "Écosystème ProInvest",
+    "proinvestEcosystemDesc": "Pour les organisations professionnelles",
+    "about": "À propos",
+    "contactUs": "Contactez-nous",
+    "featureRequest": "Demande de fonctionnalité"
+  },
+  "footer": {
+    "description": "ProInvest crée les plateformes technologiques pour le sport moderne — des équipes jeunesse aux ligues professionnelles.",
+    "quickLinks": "Liens rapides",
+    "ourProducts": "Nos produits",
+    "about": "À propos",
+    "contactUs": "Contactez-nous",
+    "connectWithUs": "Suivez-nous",
+    "copyright": "© 2025 ProInvest. Tous droits réservés."
+  },
+  "buttons": {
+    "learnMore": "En savoir plus",
+    "getStarted": "Commencer",
+    "joinBeta": "Rejoindre la bêta",
+    "getEarlyAccess": "Obtenez un accès anticipé",
+    "seeAllFeatures": "Voir toutes les fonctionnalités",
+    "seeHowItWorks": "Voir comment ça fonctionne",
+    "meetTheTeam": "Rencontrer l'équipe",
+    "sendMessage": "Envoyer le message",
+    "submitting": "Envoi en cours...",
+    "requestBetaAccess": "Demander l'accès bêta",
+    "watchDemo": "Voir la démo"
+  },
+  "badges": {
+    "betaAvailable": "Bêta disponible",
+    "inDevelopment": "En développement",
+    "nowInBeta": "Maintenant en bêta",
+    "nowInBetaTestFlight": "Maintenant en bêta sur TestFlight",
+    "availableOnTestFlight": "Disponible sur TestFlight",
+    "completed": "Complété",
+    "ready": "Prêt",
+    "inDev": "En dév.",
+    "demo": "Démo"
+  },
+  "language": {
+    "en": "EN",
+    "fr": "FR",
+    "english": "English",
+    "french": "Français"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "badge": "L'équipe",
+    "title": "Qui",
+    "titleHighlight": "nous sommes",
+    "subtitle": "Technologie pour tous les niveaux du jeu. Des équipes jeunesse aux ligues pro — nous bâtissons l'écosystème sportif complet."
+  },
+  "mission": {
+    "title": "Notre mission",
+    "intro": "La techno sportive devrait servir tous les niveaux — du coach jeunesse à l'équipe pro engageant des millions de fans.",
+    "twoProducts": "Nous créons deux produits :",
+    "teamops": {
+      "name": "TeamOps",
+      "description": "Plateforme pour équipes jeunesse et amateurs. Horaire, communication, conformité, sécurité — tout au même endroit."
+    },
+    "proinvest": {
+      "name": "Écosystème ProInvest",
+      "description": "Engagement des partisans pour ligues pro. Apps d'équipe, divertissement, fidélité et analytique."
+    },
+    "together": "Ensemble, nous :",
+    "goals": [
+      "Simplifions les opérations et priorisons la sécurité",
+      "Offrons de nouvelles façons d'engager les partisans",
+      "Créons une techno qui évolue de l'équipe à la ligue",
+      "Créons des liens durables avec le jeu"
+    ],
+    "conclusion": "Du premier coup de patin aux arénas combles — nous propulsons le parcours sportif complet."
+  },
+  "team": {
+    "philippe": {
+      "name": "Philippe Trop",
+      "title": "PDG et fondateur",
+      "description": "Passion hockey + esprit entrepreneurial. Fondateur de 360° Hockey Enterprises. Combine expertise hockey et stratégie d'affaires."
+    },
+    "blake": {
+      "name": "Blake Nielsen",
+      "title": "Développement affaires, cofondateur",
+      "description": "Passion hockey et esprit entrepreneurial. Expert commandites et partenariats, créant des ponts entre partisans, marques et ligues."
+    },
+    "salvatore": {
+      "name": "Salvatore Papia",
+      "title": "Chef technologie, cofondateur",
+      "description": "Ingénieur et architecte systèmes temps réel. Dirige le moteur Hyperion et les intégrations IA/ML. Assure évolutivité et sécurité."
+    },
+    "martin": {
+      "name": "Martin Villeneuve",
+      "title": "Chef des finances",
+      "description": "Ancien chef des opérations BMO Trust, 65 G$ d'actifs. Expertise financière, relations investisseurs et croissance stratégique."
+    }
+  },
+  "poweredBy": "Propulsé par"
+}

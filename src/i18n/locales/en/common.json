@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "ourProducts": "Our Products",
+    "teamops": "TeamOps",
+    "teamopsDesc": "For youth & amateur teams",
+    "proinvestEcosystem": "ProInvest Ecosystem",
+    "proinvestEcosystemDesc": "For professional organizations",
+    "about": "About",
+    "contactUs": "Contact Us",
+    "featureRequest": "Feature Request"
+  },
+  "footer": {
+    "description": "ProInvest builds the technology platforms for modern sports — from youth teams to professional leagues.",
+    "quickLinks": "Quick Links",
+    "ourProducts": "Our Products",
+    "about": "About",
+    "contactUs": "Contact Us",
+    "connectWithUs": "Connect With Us",
+    "copyright": "Copyright © 2025 ProInvest. All rights reserved."
+  },
+  "buttons": {
+    "learnMore": "Learn more",
+    "getStarted": "Get Started",
+    "joinBeta": "Join the Beta",
+    "getEarlyAccess": "Get early access",
+    "seeAllFeatures": "See all features",
+    "seeHowItWorks": "See how it works",
+    "meetTheTeam": "Meet the team",
+    "sendMessage": "Send Message",
+    "submitting": "Submitting...",
+    "requestBetaAccess": "Request Beta Access",
+    "watchDemo": "Watch Demo"
+  },
+  "badges": {
+    "betaAvailable": "Beta Available",
+    "inDevelopment": "In Development",
+    "nowInBeta": "Now in Beta",
+    "nowInBetaTestFlight": "Now in Beta on TestFlight",
+    "availableOnTestFlight": "Available on TestFlight",
+    "completed": "Completed",
+    "ready": "Ready",
+    "inDev": "In Dev",
+    "demo": "Demo"
+  },
+  "language": {
+    "en": "EN",
+    "fr": "FR",
+    "english": "English",
+    "french": "Français"
+  }
+}

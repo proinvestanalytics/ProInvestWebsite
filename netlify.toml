@@ -4,6 +4,8 @@
   command = "npm run build" # or "yarn build"
   # The directory to publish (your build output)
   publish = "dist"
+  # Netlify functions directory
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/*"

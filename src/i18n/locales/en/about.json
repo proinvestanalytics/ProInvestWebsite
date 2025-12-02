@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "badge": "Meet the Team",
+    "title": "Who",
+    "titleHighlight": "We Are",
+    "subtitle": "We build technology for every level of the game. From youth teams managing their seasons to professional leagues engaging millions of fans—we're creating the complete sports technology ecosystem."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "intro": "We believe great sports technology should serve every level of the game — from the youth coach juggling practice schedules to the professional team engaging millions of fans on game night.",
+    "twoProducts": "That's why we're building two products:",
+    "teamops": {
+      "name": "TeamOps",
+      "description": "Operations platform for youth and amateur teams. Scheduling, communication, compliance, player safety, and much more all in one place."
+    },
+    "proinvest": {
+      "name": "ProInvest Ecosystem",
+      "description": "Complete fan engagement infrastructure for professional leagues. Full-stack team apps, in-app entertainment, Seventh Skater Club for lifetime loyalty, and ProInsight for analytics."
+    },
+    "together": "Together, we:",
+    "goals": [
+      "Empower youth teams with tools that simplify operations and prioritize safety",
+      "Give professional teams new ways to engage and monetize their fanbase",
+      "Build technology that scales from a single team to an entire league",
+      "Create lifelong connections between people and the game"
+    ],
+    "conclusion": "From first skate to sold-out arenas — we're building the technology that powers the full sports journey."
+  },
+  "team": {
+    "philippe": {
+      "name": "Philippe Trop",
+      "title": "CEO & Founder",
+      "description": "Hockey passion + entrepreneurial drive. Founded 360° Hockey Enterprises, developing hockey training solutions. Combines deep hockey knowledge with business strategy to drive fan engagement solutions."
+    },
+    "blake": {
+      "name": "Blake Nielsen",
+      "title": "CBDO & Co-Founder",
+      "description": "Combines a deep hockey passion with entrepreneurial drive. Sponsorship and partnership specialist skilled at bridging fans, brands, and leagues."
+    },
+    "salvatore": {
+      "name": "Salvatore Papia",
+      "title": "CTO & Co-Founder",
+      "description": "Computer engineer and real-time systems architect. Leads the Hyperion sub-second scoring engine and AI/ML integrations. Ensures platform scalability and data security."
+    },
+    "martin": {
+      "name": "Martin Villeneuve",
+      "title": "CFO",
+      "description": "Former COO at BMO Trust, responsible for managing CAD $65B in assets. Provides large-scale financial expertise, investor relations, and strategic growth focus. Ensures a sustainable runway with rigorous financial oversight."
+    }
+  },
+  "poweredBy": "Powered by"
+}

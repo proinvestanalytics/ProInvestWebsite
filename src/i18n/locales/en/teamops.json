@@ -1,0 +1,181 @@
+{
+  "hero": {
+    "badge": "Now in Beta",
+    "tagline": "From Chaos to Control",
+    "subtitle": "One app for managers, coaches, trainers, parents, and players",
+    "description": "Replace your spreadsheets, group chats, paper forms, and payment trackers. Everything your team needs—schedules, rosters, injuries, payments, communication—finally in one place.",
+    "trustSignals": {
+      "iosAndroid": "iOS & Android",
+      "freeDuringBeta": "Free during beta",
+      "builtForSecurity": "Built for security"
+    }
+  },
+  "problemSolution": {
+    "eyebrow": "Sound familiar?",
+    "title": "Every problem has a solution",
+    "subtitle": "Managing a team shouldn't feel like a second job. TeamOps fixes that.",
+    "cards": {
+      "communication": {
+        "problem": "Endless Texts & Calls",
+        "problemDesc": "Parents calling about ice time. Again.",
+        "solution": "Structured Communication",
+        "solutionDesc": "No more calls and texts. One channel. Clear process."
+      },
+      "scheduling": {
+        "problem": "Scattered Information",
+        "problemDesc": "Forms, rosters, contacts. All over the place.",
+        "solution": "Smart Scheduling",
+        "solutionDesc": "Practices, games, events. Everything connected and tracked."
+      },
+      "singleSource": {
+        "problem": "No Single Source of Truth",
+        "problemDesc": "Which schedule is the real one?",
+        "solution": "Role-Based Access",
+        "solutionDesc": "Managers, coaches, trainers, parents, players. Each sees what they need."
+      },
+      "manual": {
+        "problem": "Manual Everything",
+        "problemDesc": "Tracking payments, suspensions, attendance. By hand.",
+        "solution": "Complete Oversight",
+        "solutionDesc": "Payments, compliance, status. Full visibility at a glance."
+      },
+      "firefighting": {
+        "problem": "Season-Long Firefighting",
+        "problemDesc": "Tryouts to playoffs. Chaos the whole way.",
+        "solution": "Full Season Control",
+        "solutionDesc": "Tryouts to playoffs. Every phase organized in one place."
+      },
+      "visibility": {
+        "problem": "Zero Visibility",
+        "problemDesc": "What's the team status? Nobody knows.",
+        "solution": "Player Safety",
+        "solutionDesc": "Protocols and tracking built in. Nothing falls through the cracks."
+      }
+    }
+  },
+  "roles": {
+    "eyebrow": "Five User Roles",
+    "title": "Everyone sees exactly what they need",
+    "subtitle": "Not everyone needs access to everything. Each role gets a tailored experience with role-specific permissions.",
+    "manager": {
+      "title": "Manager",
+      "subtitle": "The Administrator",
+      "items": [
+        "Full roster & invite control",
+        "Budget & payment tracking",
+        "Compliance dashboard"
+      ]
+    },
+    "coach": {
+      "title": "Coach",
+      "subtitle": "The Strategist",
+      "items": [
+        "Lineups & practice plans",
+        "Live shift tracking",
+        "Player availability view"
+      ]
+    },
+    "trainer": {
+      "title": "Trainer",
+      "subtitle": "The Caregiver",
+      "items": [
+        "Injury reports (works offline)",
+        "Return-to-play tracking",
+        "Medical clearance uploads"
+      ]
+    },
+    "parent": {
+      "title": "Parent",
+      "subtitle": "The Supporter",
+      "items": [
+        "Child's medical profile",
+        "Payment & injury status",
+        "RSVP for events"
+      ]
+    },
+    "player": {
+      "title": "Player",
+      "subtitle": "The Participant",
+      "items": [
+        "Schedule & lineups",
+        "Practice plans & drills",
+        "Team chat & rules"
+      ]
+    }
+  },
+  "safety": {
+    "eyebrow": "Safety & Compliance",
+    "title": "Player safety, handled properly",
+    "subtitle": "When injuries happen, you need clear protocols and proper documentation—not paper forms in a binder.",
+    "cards": {
+      "injuryReports": {
+        "title": "Digital Injury Reports",
+        "description": "Create reports instantly from the bench. Works offline, syncs later."
+      },
+      "recovery": {
+        "title": "Structured Recovery",
+        "description": "Return-to-play protocols with clear stages. Track progress. Require clearances."
+      },
+      "certification": {
+        "title": "Coach Certification",
+        "description": "Coaches complete safety training before full app access. No exceptions."
+      },
+      "auditTrail": {
+        "title": "Complete Audit Trail",
+        "description": "Every incident documented. Every clearance tracked. If it happened, it's recorded."
+      }
+    }
+  },
+  "trust": {
+    "eyebrow": "Built for Trust",
+    "title": "Built for the real world",
+    "subtitle": "Arenas with no signal. Sensitive medical data. Strict compliance requirements. TeamOps is built to handle it all.",
+    "nativeMobile": {
+      "title": "Native mobile",
+      "description": "iOS and Android apps. Fast, responsive, feels like it belongs on your phone."
+    },
+    "secureByDefault": {
+      "title": "Secure by default",
+      "description": "Encryption everywhere. Role-based access. Your data stays protected."
+    },
+    "complianceTitle": "Compliance & Standards"
+  },
+  "beta": {
+    "eyebrow": "Join the Beta",
+    "title": "Be part of building something great",
+    "subtitle": "We're working with teams like yours to make TeamOps the best it can be.",
+    "cards": {
+      "free": {
+        "title": "Free during beta",
+        "description": "No credit card required. Use all features at no cost while we're in beta."
+      },
+      "directInput": {
+        "title": "Direct input",
+        "description": "Your feedback shapes the product. Tell us what's working and what needs improvement."
+      },
+      "prioritySupport": {
+        "title": "Priority support",
+        "description": "Get direct access to our team. We're here to help you get the most out of TeamOps."
+      },
+      "earlyPricing": {
+        "title": "Early-adopter pricing",
+        "description": "Lock in special pricing when we launch. Beta testers get the best deal."
+      }
+    }
+  },
+  "finalCta": {
+    "badge": "Available on TestFlight",
+    "title": "Ready for a better way?",
+    "subtitle": "Stop juggling spreadsheets, group chats, and paper forms. Get your team on TeamOps.",
+    "limitedSpots": "Limited beta spots available. Get in before your season starts."
+  },
+  "multiSport": {
+    "eyebrow": "Multi-Sport",
+    "description": "Built for hockey. Expanding to more sports.",
+    "hockey": "Hockey",
+    "moreSports": "More sports",
+    "comingSoon": "Coming soon",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  }
+}
