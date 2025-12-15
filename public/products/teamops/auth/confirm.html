@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamOps - Email Verification</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 420px;
+            margin: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            border-radius: 16px;
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, #007AFF 0%, #0056b3 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.4);
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 122, 255, 0.5);
+        }
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-top: 3px solid #007AFF;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 24px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .hidden {
+            display: none;
+        }
+        .subtext {
+            margin-top: 24px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .subtext a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        .subtext a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/TeamOps_app_icon.png" alt="TeamOps" class="logo">
+
+        <!-- Loading State -->
+        <div id="loading">
+            <h1>Opening TeamOps...</h1>
+            <div class="spinner"></div>
+            <p>Redirecting you to the app</p>
+        </div>
+
+        <!-- Fallback State (if app doesn't open) -->
+        <div id="fallback" class="hidden">
+            <h1>Open in TeamOps</h1>
+            <p>Tap the button below to complete your email verification in the TeamOps app.</p>
+            <a id="openAppBtn" class="button" href="#">Open TeamOps App</a>
+            <p class="subtext">
+                Don't have the app yet?<br>
+                Download from the <a href="https://apps.apple.com" target="_blank">App Store</a> or <a href="https://play.google.com" target="_blank">Google Play</a>
+            </p>
+        </div>
+
+        <!-- Error State (invalid/expired link) -->
+        <div id="error" class="hidden">
+            <h1>Link Invalid</h1>
+            <p>This verification link is invalid or has expired.</p>
+            <p>Please open the TeamOps app and request a new verification email.</p>
+            <a class="button" href="teamops://">Open TeamOps App</a>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const params = new URLSearchParams(window.location.search);
+            const tokenHash = params.get('token_hash');
+            const type = params.get('type') || 'signup';
+
+            const loadingEl = document.getElementById('loading');
+            const fallbackEl = document.getElementById('fallback');
+            const errorEl = document.getElementById('error');
+
+            if (!tokenHash) {
+                // No token - show error
+                loadingEl.classList.add('hidden');
+                errorEl.classList.remove('hidden');
+                return;
+            }
+
+            // Build the deep link URL
+            const deepLink = 'teamops://auth/confirm?token_hash=' +
+                encodeURIComponent(tokenHash) +
+                '&type=' + encodeURIComponent(type);
+
+            // Set the fallback button href
+            document.getElementById('openAppBtn').href = deepLink;
+
+            // Try to open the app automatically
+            window.location.href = deepLink;
+
+            // After 2.5 seconds, if we're still here, show the fallback UI
+            setTimeout(function() {
+                loadingEl.classList.add('hidden');
+                fallbackEl.classList.remove('hidden');
+            }, 2500);
+        })();
+    </script>
+</body>
+</html>

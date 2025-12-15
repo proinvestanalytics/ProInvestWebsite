@@ -7,6 +7,13 @@
   # Netlify functions directory
   functions = "netlify/functions"
 
+# TeamOps auth pages - serve static HTML (don't redirect to SPA)
+[[redirects]]
+  from = "/products/teamops/auth/confirm"
+  to = "/products/teamops/auth/confirm.html"
+  status = 200
+
+# SPA fallback - must be AFTER specific routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
