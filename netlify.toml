@@ -13,6 +13,11 @@
   to = "/products/teamops/auth/confirm.html"
   status = 200
 
+[[redirects]]
+  from = "/products/teamops/auth/reset-password"
+  to = "/products/teamops/auth/reset-password.html"
+  status = 200
+
 # SPA fallback - must be AFTER specific routes
 [[redirects]]
   from = "/*"
