@@ -160,15 +160,25 @@
             // Check for token_hash (client-side flow) or access_token (server-side flow)
             const tokenHash = params.get('token_hash');
             const accessToken = hashParams.get('access_token');
+            const refreshToken = hashParams.get('refresh_token');
             const type = params.get('type') || hashParams.get('type') || 'signup';
+            const errorCode = hashParams.get('error_code') || params.get('error_code');
+            const errorDescription = hashParams.get('error_description') || params.get('error_description');
 
             const loadingEl = document.getElementById('loading');
             const fallbackEl = document.getElementById('fallback');
             const successEl = document.getElementById('success');
             const errorEl = document.getElementById('error');
 
-            // If we have an access_token in the fragment, Supabase already verified the email
-            if (accessToken) {
+            // Check for errors first
+            if (errorCode || errorDescription) {
+                loadingEl.classList.add('hidden');
+                errorEl.classList.remove('hidden');
+                return;
+            }
+
+            // If we have an access_token AND refresh_token, Supabase verified the email
+            if (accessToken && refreshToken) {
                 // Email is verified! Show success state
                 loadingEl.classList.add('hidden');
                 successEl.classList.remove('hidden');
@@ -191,16 +201,7 @@
                 return;
             }
 
-            // No token at all - but if we got here from Supabase redirect, email is likely verified
-            // Check if there's any hash content (Supabase adds fragments even on error sometimes)
-            if (window.location.hash && window.location.hash.length > 1) {
-                // Supabase redirected us, email should be verified
-                loadingEl.classList.add('hidden');
-                successEl.classList.remove('hidden');
-                return;
-            }
-
-            // Truly no parameters - show error
+            // No valid tokens - show error (don't assume verified)
             loadingEl.classList.add('hidden');
             errorEl.classList.remove('hidden');
         })();
